@@ -19,8 +19,7 @@ void print_intro() {
   system("clear");
 #endif
 
-  // Function for creating typed text effect
-  auto typeText = [](const string &text, int delay_ms = 20) {
+  auto type_text = [](const string &text, int delay_ms = 20) {
     for (char c : text) {
       cout << c << flush;
       this_thread::sleep_for(chrono::milliseconds(delay_ms));
@@ -28,7 +27,6 @@ void print_intro() {
     cout << "\n";
   };
 
-  // Using standard ASCII characters for borders
   cout << "\n\n+" << string(WIDTH - 2, '-') << "+\n";
 
   fstream f{"../intro"};
@@ -38,12 +36,10 @@ void print_intro() {
 
   cout << string(WIDTH, '=') << "\n\n";
 
-  // Welcome message with typing effect
-  typeText("                           Welcome to the Classic Board Game of "
-           "Strategy");
+  type_text("                           Welcome to the Classic Board Game of "
+            "Strategy");
   cout << "\n";
 
-  // Player information box using standard ASCII
   cout << R"(
     +-------------------------------- PLAYERS ----------------------------------+
     |                                                                           |
@@ -53,7 +49,6 @@ void print_intro() {
     +---------------------------------------------------------------------------+
 )" << endl;
 
-  // Game rules box using standard ASCII
   cout << R"(
     +------------------------------- GAME RULES -------------------------------+
     |                                                                          |
@@ -94,7 +89,6 @@ int main() {
     cout << drawer::get_colour(game.current_player_colour()) << dot
          << format("{} player turn.\n", game.current_player_name());
 
-    // cout << game.current_player_name() << " player turn. \n";
     cout << dot << format("Dice face value: {}\n", steps);
     game.move(steps);
     print_sep('-', 70);
