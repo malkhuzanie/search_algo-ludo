@@ -3,7 +3,6 @@ CMakeFiles/ludo.dir/src/game.cpp.o: \
  /home/tomato/pr/search_algo/ludo/include/ai.h \
  /home/tomato/pr/search_algo/ludo/include/game.h \
  /home/tomato/pr/search_algo/ludo/include/board.h \
- /home/tomato/pr/search_algo/ludo/include/constants.h \
  /home/tomato/pr/search_algo/ludo/include/grid.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/iostream \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/requires_hosted.h \
@@ -203,10 +202,7 @@ CMakeFiles/ludo.dir/src/game.cpp.o: \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/erase_if.h \
  /home/tomato/pr/search_algo/ludo/include/pawn.h \
  /home/tomato/pr/search_algo/ludo/include/player.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cassert \
- /usr/include/assert.h \
  /home/tomato/pr/search_algo/ludo/include/player_colour.h \
- /home/tomato/pr/search_algo/ludo/include/player_path.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/vector \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_uninitialized.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_vector.h \
@@ -215,15 +211,37 @@ CMakeFiles/ludo.dir/src/game.cpp.o: \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/set \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_set.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_multiset.h \
- /home/tomato/pr/search_algo/ludo/include/board_printer.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/iomanip \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/quoted_string.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/sstream \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/sstream.tcc \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/unordered_map \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/unordered_map.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/hashtable.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/hashtable_policy.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/memory \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_raw_storage_iter.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/align.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/unique_ptr.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/shared_ptr.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/shared_ptr_base.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/allocated_ptr.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/concurrence.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/shared_ptr_atomic.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/atomic_base.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/atomic_lockfree_defines.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/atomic_wait.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/climits \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/limits.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/syslimits.h \
+ /usr/include/limits.h /usr/include/bits/posix1_lim.h \
+ /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
+ /usr/include/bits/uio_lim.h /usr/include/unistd.h \
+ /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
+ /usr/include/bits/confname.h /usr/include/bits/getopt_posix.h \
+ /usr/include/bits/getopt_core.h /usr/include/bits/unistd_ext.h \
+ /usr/include/linux/close_range.h /usr/include/syscall.h \
+ /usr/include/sys/syscall.h /usr/include/asm/unistd.h \
+ /usr/include/asm/unistd_64.h /usr/include/bits/syscall.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/std_mutex.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/backward/auto_ptr.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ranges_uninitialized.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/out_ptr.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/pstl/glue_memory_defs.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/pstl/execution_defs.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/random \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cmath \
  /usr/include/math.h /usr/include/bits/math-vector.h \
@@ -252,4 +270,13 @@ CMakeFiles/ludo.dir/src/game.cpp.o: \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/numeric \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_numeric.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/pstl/glue_numeric_defs.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/pstl/execution_defs.h
+ /home/tomato/pr/search_algo/ludo/include/board_printer.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/iomanip \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/quoted_string.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/sstream \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/sstream.tcc \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/unordered_map \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/unordered_map.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/hashtable.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/hashtable_policy.h \
+ /home/tomato/pr/search_algo/ludo/include/drawer.h

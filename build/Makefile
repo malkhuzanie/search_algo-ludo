@@ -154,6 +154,54 @@ src/ai.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ludo.dir/build.make CMakeFiles/ludo.dir/src/ai.cpp.s
 .PHONY : src/ai.cpp.s
 
+src/board.o: src/board.cpp.o
+.PHONY : src/board.o
+
+# target to build an object file
+src/board.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ludo.dir/build.make CMakeFiles/ludo.dir/src/board.cpp.o
+.PHONY : src/board.cpp.o
+
+src/board.i: src/board.cpp.i
+.PHONY : src/board.i
+
+# target to preprocess a source file
+src/board.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ludo.dir/build.make CMakeFiles/ludo.dir/src/board.cpp.i
+.PHONY : src/board.cpp.i
+
+src/board.s: src/board.cpp.s
+.PHONY : src/board.s
+
+# target to generate assembly for a file
+src/board.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ludo.dir/build.make CMakeFiles/ludo.dir/src/board.cpp.s
+.PHONY : src/board.cpp.s
+
+src/drawer.o: src/drawer.cpp.o
+.PHONY : src/drawer.o
+
+# target to build an object file
+src/drawer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ludo.dir/build.make CMakeFiles/ludo.dir/src/drawer.cpp.o
+.PHONY : src/drawer.cpp.o
+
+src/drawer.i: src/drawer.cpp.i
+.PHONY : src/drawer.i
+
+# target to preprocess a source file
+src/drawer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ludo.dir/build.make CMakeFiles/ludo.dir/src/drawer.cpp.i
+.PHONY : src/drawer.cpp.i
+
+src/drawer.s: src/drawer.cpp.s
+.PHONY : src/drawer.s
+
+# target to generate assembly for a file
+src/drawer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ludo.dir/build.make CMakeFiles/ludo.dir/src/drawer.cpp.s
+.PHONY : src/drawer.cpp.s
+
 src/game.o: src/game.cpp.o
 .PHONY : src/game.o
 
@@ -286,6 +334,12 @@ help:
 	@echo "... src/ai.o"
 	@echo "... src/ai.i"
 	@echo "... src/ai.s"
+	@echo "... src/board.o"
+	@echo "... src/board.i"
+	@echo "... src/board.s"
+	@echo "... src/drawer.o"
+	@echo "... src/drawer.i"
+	@echo "... src/drawer.s"
 	@echo "... src/game.o"
 	@echo "... src/game.i"
 	@echo "... src/game.s"

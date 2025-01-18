@@ -6,6 +6,8 @@ cmake_policy(SET CMP0009 NEW)
 file(GLOB NEW_GLOB LIST_DIRECTORIES true "/home/tomato/pr/search_algo/ludo/src/*.cpp")
 set(OLD_GLOB
   "/home/tomato/pr/search_algo/ludo/src/ai.cpp"
+  "/home/tomato/pr/search_algo/ludo/src/board.cpp"
+  "/home/tomato/pr/search_algo/ludo/src/drawer.cpp"
   "/home/tomato/pr/search_algo/ludo/src/game.cpp"
   "/home/tomato/pr/search_algo/ludo/src/main.cpp"
   "/home/tomato/pr/search_algo/ludo/src/pawn.cpp"

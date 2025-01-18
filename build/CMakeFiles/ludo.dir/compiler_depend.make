@@ -4,9 +4,486 @@
 CMakeFiles/ludo.dir/src/ai.cpp.o: /home/tomato/pr/search_algo/ludo/src/ai.cpp \
   /home/tomato/pr/search_algo/ludo/include/ai.h \
   /home/tomato/pr/search_algo/ludo/include/board.h \
-  /home/tomato/pr/search_algo/ludo/include/board_printer.h \
-  /home/tomato/pr/search_algo/ludo/include/constants.h \
   /home/tomato/pr/search_algo/ludo/include/game.h \
+  /home/tomato/pr/search_algo/ludo/include/grid.h \
+  /home/tomato/pr/search_algo/ludo/include/node.h \
+  /home/tomato/pr/search_algo/ludo/include/pawn.h \
+  /home/tomato/pr/search_algo/ludo/include/player.h \
+  /home/tomato/pr/search_algo/ludo/include/player_colour.h \
+  /usr/include/alloca.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/asm/errno.h \
+  /usr/include/asm/unistd.h \
+  /usr/include/asm/unistd_64.h \
+  /usr/include/assert.h \
+  /usr/include/bits/atomic_wide_counter.h \
+  /usr/include/bits/byteswap.h \
+  /usr/include/bits/confname.h \
+  /usr/include/bits/cpu-set.h \
+  /usr/include/bits/endian.h \
+  /usr/include/bits/endianness.h \
+  /usr/include/bits/environments.h \
+  /usr/include/bits/errno.h \
+  /usr/include/bits/fenv.h \
+  /usr/include/bits/floatn-common.h \
+  /usr/include/bits/floatn.h \
+  /usr/include/bits/flt-eval-method.h \
+  /usr/include/bits/fp-fast.h \
+  /usr/include/bits/fp-logb.h \
+  /usr/include/bits/getopt_core.h \
+  /usr/include/bits/getopt_posix.h \
+  /usr/include/bits/iscanonical.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/libm-simd-decl-stubs.h \
+  /usr/include/bits/local_lim.h \
+  /usr/include/bits/locale.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/bits/math-vector.h \
+  /usr/include/bits/mathcalls-helper-functions.h \
+  /usr/include/bits/mathcalls-narrow.h \
+  /usr/include/bits/mathcalls.h \
+  /usr/include/bits/posix1_lim.h \
+  /usr/include/bits/posix2_lim.h \
+  /usr/include/bits/posix_opt.h \
+  /usr/include/bits/pthread_stack_min-dynamic.h \
+  /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/pthreadtypes.h \
+  /usr/include/bits/sched.h \
+  /usr/include/bits/select.h \
+  /usr/include/bits/semaphore.h \
+  /usr/include/bits/setjmp.h \
+  /usr/include/bits/sigaction.h \
+  /usr/include/bits/sigcontext.h \
+  /usr/include/bits/sigevent-consts.h \
+  /usr/include/bits/siginfo-arch.h \
+  /usr/include/bits/siginfo-consts-arch.h \
+  /usr/include/bits/siginfo-consts.h \
+  /usr/include/bits/signal_ext.h \
+  /usr/include/bits/signum-arch.h \
+  /usr/include/bits/signum-generic.h \
+  /usr/include/bits/sigstack.h \
+  /usr/include/bits/sigstksz.h \
+  /usr/include/bits/sigthread.h \
+  /usr/include/bits/ss_flags.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdint-least.h \
+  /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-float.h \
+  /usr/include/bits/struct_mutex.h \
+  /usr/include/bits/struct_rwlock.h \
+  /usr/include/bits/syscall.h \
+  /usr/include/bits/thread-shared-types.h \
+  /usr/include/bits/time.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/timex.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/types/FILE.h \
+  /usr/include/bits/types/__FILE.h \
+  /usr/include/bits/types/__fpos64_t.h \
+  /usr/include/bits/types/__fpos_t.h \
+  /usr/include/bits/types/__locale_t.h \
+  /usr/include/bits/types/__mbstate_t.h \
+  /usr/include/bits/types/__sigset_t.h \
+  /usr/include/bits/types/__sigval_t.h \
+  /usr/include/bits/types/clock_t.h \
+  /usr/include/bits/types/clockid_t.h \
+  /usr/include/bits/types/cookie_io_functions_t.h \
+  /usr/include/bits/types/error_t.h \
+  /usr/include/bits/types/locale_t.h \
+  /usr/include/bits/types/mbstate_t.h \
+  /usr/include/bits/types/sig_atomic_t.h \
+  /usr/include/bits/types/sigevent_t.h \
+  /usr/include/bits/types/siginfo_t.h \
+  /usr/include/bits/types/sigset_t.h \
+  /usr/include/bits/types/sigval_t.h \
+  /usr/include/bits/types/stack_t.h \
+  /usr/include/bits/types/struct_FILE.h \
+  /usr/include/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/bits/types/struct_itimerspec.h \
+  /usr/include/bits/types/struct_sched_param.h \
+  /usr/include/bits/types/struct_sigstack.h \
+  /usr/include/bits/types/struct_timespec.h \
+  /usr/include/bits/types/struct_timeval.h \
+  /usr/include/bits/types/struct_tm.h \
+  /usr/include/bits/types/time_t.h \
+  /usr/include/bits/types/timer_t.h \
+  /usr/include/bits/types/wint_t.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/uintn-identity.h \
+  /usr/include/bits/uio_lim.h \
+  /usr/include/bits/unistd_ext.h \
+  /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h \
+  /usr/include/bits/wchar.h \
+  /usr/include/bits/wctype-wchar.h \
+  /usr/include/bits/wordsize.h \
+  /usr/include/bits/xopen_lim.h \
+  /usr/include/ctype.h \
+  /usr/include/endian.h \
+  /usr/include/errno.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/fenv.h \
+  /usr/include/gnu/stubs-64.h \
+  /usr/include/gnu/stubs.h \
+  /usr/include/inttypes.h \
+  /usr/include/libintl.h \
+  /usr/include/limits.h \
+  /usr/include/linux/close_range.h \
+  /usr/include/linux/errno.h \
+  /usr/include/linux/limits.h \
+  /usr/include/locale.h \
+  /usr/include/math.h \
+  /usr/include/pthread.h \
+  /usr/include/sched.h \
+  /usr/include/semaphore.h \
+  /usr/include/setjmp.h \
+  /usr/include/signal.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
+  /usr/include/stdio.h \
+  /usr/include/stdlib.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
+  /usr/include/sys/cdefs.h \
+  /usr/include/sys/select.h \
+  /usr/include/sys/single_threaded.h \
+  /usr/include/sys/syscall.h \
+  /usr/include/sys/time.h \
+  /usr/include/sys/types.h \
+  /usr/include/sys/ucontext.h \
+  /usr/include/syscall.h \
+  /usr/include/time.h \
+  /usr/include/uchar.h \
+  /usr/include/unistd.h \
+  /usr/include/wchar.h \
+  /usr/include/wctype.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/float.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/algorithm \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/any \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/array \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/atomic \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/backward/auto_ptr.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/backward/binders.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/barrier \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bit \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/algorithmfwd.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/align.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/alloc_traits.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/allocated_ptr.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/allocator.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/atomic_base.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/atomic_futex.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/atomic_lockfree_defines.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/atomic_timed_wait.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/atomic_wait.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/basic_ios.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/basic_ios.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/basic_string.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/basic_string.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/char_traits.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/charconv.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/chrono.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/chrono_io.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/codecvt.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/concept_check.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/cpp_type_traits.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/cxxabi_forced.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/cxxabi_init_exception.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/deque.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/elements_of.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/enable_special_members.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/erase_if.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/exception.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/exception_defines.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/exception_ptr.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/forward_list.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/forward_list.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/fs_dir.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/fs_fwd.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/fs_ops.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/fs_path.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/fstream.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/functexcept.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/functional_hash.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/gslice.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/gslice_array.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/hash_bytes.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/hashtable.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/hashtable_policy.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/indirect_array.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/invoke.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ios_base.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/istream.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/iterator_concepts.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/list.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/locale_classes.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/locale_classes.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/locale_conv.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/locale_facets.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/locale_facets.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/locale_facets_nonio.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/locale_facets_nonio.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/localefwd.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/mask_array.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/max_size_type.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/memory_resource.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/memoryfwd.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/mofunc_impl.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/move.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/move_only_function.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/nested_exception.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/new_allocator.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/node_handle.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ostream.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ostream_insert.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/out_ptr.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/parse_numbers.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/postypes.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/predefined_ops.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ptr_traits.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/quoted_string.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/random.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/random.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/range_access.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ranges_algo.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ranges_algobase.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ranges_base.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ranges_cmp.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ranges_uninitialized.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ranges_util.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/refwrap.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/regex.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/regex.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/regex_automaton.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/regex_automaton.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/regex_compiler.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/regex_compiler.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/regex_constants.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/regex_error.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/regex_executor.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/regex_executor.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/regex_scanner.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/regex_scanner.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/requires_hosted.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/semaphore_base.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/shared_ptr.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/shared_ptr_atomic.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/shared_ptr_base.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/slice_array.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/specfun.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/sstream.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/std_abs.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/std_function.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/std_mutex.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/std_thread.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_algo.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_algobase.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_bvector.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_construct.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_deque.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_function.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_heap.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_iterator.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_iterator_base_funcs.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_iterator_base_types.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_list.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_map.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_multimap.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_multiset.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_numeric.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_pair.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_queue.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_raw_storage_iter.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_relops.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_set.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_stack.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_tempbuf.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_tree.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_uninitialized.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_vector.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stream_iterator.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/streambuf.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/streambuf_iterator.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/string_view.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stringfwd.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/this_thread_sleep.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/unicode-data.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/unicode.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/uniform_int_dist.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/unique_lock.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/unique_ptr.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/unordered_map.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/unordered_set.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/uses_allocator.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/uses_allocator_args.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/utility.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/valarray_after.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/valarray_array.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/valarray_array.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/valarray_before.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/vector.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/version.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bitset \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cassert \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ccomplex \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cctype \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cerrno \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cfenv \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cfloat \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/charconv \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/chrono \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cinttypes \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ciso646 \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/climits \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/clocale \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cmath \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/codecvt \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/compare \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/complex \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/concepts \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/condition_variable \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/coroutine \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/csetjmp \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/csignal \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cstdalign \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cstdarg \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cstdbool \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cstddef \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cstdint \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cstdio \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cstdlib \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cstring \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ctgmath \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ctime \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cuchar \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cwchar \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cwctype \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/debug/assertions.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/debug/debug.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/deque \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/exception \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/expected \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/aligned_buffer.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/alloc_traits.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/atomicity.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/concurrence.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/numeric_traits.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/string_conversions.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/type_traits.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/fenv.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/filesystem \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/format \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/forward_list \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/fstream \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/functional \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/future \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/generator \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/initializer_list \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/iomanip \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ios \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/iosfwd \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/iostream \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/istream \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/iterator \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/latch \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/limits \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/list \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/locale \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/map \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/memory \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/memory_resource \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/mutex \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/new \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/numbers \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/numeric \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/optional \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ostream \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/print \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/pstl/execution_defs.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/pstl/glue_algorithm_defs.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/pstl/glue_memory_defs.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/pstl/glue_numeric_defs.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/pstl/pstl_config.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/queue \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/random \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ranges \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ratio \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/regex \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/scoped_allocator \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/semaphore \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/set \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/shared_mutex \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/source_location \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/span \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/spanstream \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/sstream \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/stack \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/stacktrace \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/stdatomic.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/stdexcept \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/stdfloat \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/stop_token \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/streambuf \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/string \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/string_view \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/syncstream \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/system_error \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/thread \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/bessel_function.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/beta_function.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/ell_integral.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/exp_integral.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/gamma.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/hypergeometric.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/legendre_function.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/modified_bessel_func.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/poly_hermite.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/poly_laguerre.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/riemann_zeta.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/special_function_util.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tuple \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/type_traits \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/typeindex \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/typeinfo \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/unordered_map \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/unordered_set \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/utility \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/valarray \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/variant \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/vector \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/version \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/atomic_word.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/basic_file.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/c++allocator.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/c++config.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/c++io.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/c++locale.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/cpu_defines.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/ctype_base.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/ctype_inline.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/error_constants.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/gthr-default.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/gthr.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/messages_members.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/opt_random.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/os_defines.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/stdc++.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/time_members.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/limits.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/stdalign.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/stdarg.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/stdbool.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/stddef.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/stdint.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/syslimits.h
+
+CMakeFiles/ludo.dir/src/board.cpp.o: /home/tomato/pr/search_algo/ludo/src/board.cpp \
+  /home/tomato/pr/search_algo/ludo/include/board.h \
+  /home/tomato/pr/search_algo/ludo/include/constants.h \
   /home/tomato/pr/search_algo/ludo/include/grid.h \
   /home/tomato/pr/search_algo/ludo/include/pawn.h \
   /home/tomato/pr/search_algo/ludo/include/player.h \
@@ -16,7 +493,6 @@ CMakeFiles/ludo.dir/src/ai.cpp.o: /home/tomato/pr/search_algo/ludo/src/ai.cpp \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
   /usr/include/asm/errno.h \
-  /usr/include/assert.h \
   /usr/include/bits/atomic_wide_counter.h \
   /usr/include/bits/byteswap.h \
   /usr/include/bits/cpu-set.h \
@@ -25,18 +501,9 @@ CMakeFiles/ludo.dir/src/ai.cpp.o: /home/tomato/pr/search_algo/ludo/src/ai.cpp \
   /usr/include/bits/errno.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
-  /usr/include/bits/flt-eval-method.h \
-  /usr/include/bits/fp-fast.h \
-  /usr/include/bits/fp-logb.h \
-  /usr/include/bits/iscanonical.h \
   /usr/include/bits/libc-header-start.h \
-  /usr/include/bits/libm-simd-decl-stubs.h \
   /usr/include/bits/locale.h \
   /usr/include/bits/long-double.h \
-  /usr/include/bits/math-vector.h \
-  /usr/include/bits/mathcalls-helper-functions.h \
-  /usr/include/bits/mathcalls-narrow.h \
-  /usr/include/bits/mathcalls.h \
   /usr/include/bits/pthread_stack_min-dynamic.h \
   /usr/include/bits/pthreadtypes-arch.h \
   /usr/include/bits/pthreadtypes.h \
@@ -97,7 +564,6 @@ CMakeFiles/ludo.dir/src/ai.cpp.o: /home/tomato/pr/search_algo/ludo/src/ai.cpp \
   /usr/include/libintl.h \
   /usr/include/linux/errno.h \
   /usr/include/locale.h \
-  /usr/include/math.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
   /usr/include/stdc-predef.h \
@@ -136,8 +602,6 @@ CMakeFiles/ludo.dir/src/ai.cpp.o: /home/tomato/pr/search_algo/ludo/src/ai.cpp \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/functexcept.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/functional_hash.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/hash_bytes.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/hashtable.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/hashtable_policy.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/invoke.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ios_base.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/istream.tcc \
@@ -163,9 +627,6 @@ CMakeFiles/ludo.dir/src/ai.cpp.o: /home/tomato/pr/search_algo/ludo/src/ai.cpp \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/postypes.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/predefined_ops.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ptr_traits.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/quoted_string.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/random.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/random.tcc \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/range_access.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ranges_algobase.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ranges_base.h \
@@ -173,8 +634,6 @@ CMakeFiles/ludo.dir/src/ai.cpp.o: /home/tomato/pr/search_algo/ludo/src/ai.cpp \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ranges_util.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/refwrap.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/requires_hosted.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/specfun.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/sstream.tcc \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/std_abs.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_algo.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_algobase.h \
@@ -188,7 +647,6 @@ CMakeFiles/ludo.dir/src/ai.cpp.o: /home/tomato/pr/search_algo/ludo/src/ai.cpp \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_map.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_multimap.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_multiset.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_numeric.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_pair.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_set.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_tempbuf.h \
@@ -202,18 +660,15 @@ CMakeFiles/ludo.dir/src/ai.cpp.o: /home/tomato/pr/search_algo/ludo/src/ai.cpp \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/unicode-data.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/unicode.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/uniform_int_dist.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/unordered_map.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/uses_allocator.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/uses_allocator_args.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/utility.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/vector.tcc \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/version.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cassert \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cctype \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cerrno \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/charconv \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/clocale \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cmath \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/compare \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/concepts \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cstddef \
@@ -234,7 +689,6 @@ CMakeFiles/ludo.dir/src/ai.cpp.o: /home/tomato/pr/search_algo/ludo/src/ai.cpp \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/type_traits.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/format \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/initializer_list \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/iomanip \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ios \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/iosfwd \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/iostream \
@@ -244,37 +698,19 @@ CMakeFiles/ludo.dir/src/ai.cpp.o: /home/tomato/pr/search_algo/ludo/src/ai.cpp \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/map \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/new \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/numbers \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/numeric \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/optional \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ostream \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/pstl/execution_defs.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/pstl/glue_numeric_defs.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/pstl/pstl_config.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/random \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/set \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/span \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/sstream \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/stdexcept \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/streambuf \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/string \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/string_view \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/system_error \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/bessel_function.tcc \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/beta_function.tcc \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/ell_integral.tcc \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/exp_integral.tcc \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/gamma.tcc \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/hypergeometric.tcc \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/legendre_function.tcc \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/modified_bessel_func.tcc \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/poly_hermite.tcc \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/poly_laguerre.tcc \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/riemann_zeta.tcc \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/special_function_util.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tuple \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/type_traits \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/typeinfo \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/unordered_map \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/variant \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/vector \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/atomic_word.h \
@@ -288,343 +724,62 @@ CMakeFiles/ludo.dir/src/ai.cpp.o: /home/tomato/pr/search_algo/ludo/src/ai.cpp \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/gthr-default.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/gthr.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/messages_members.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/opt_random.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/os_defines.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/time_members.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/stdarg.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/stddef.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/stdint.h
 
-CMakeFiles/ludo.dir/src/game.cpp.o: /home/tomato/pr/search_algo/ludo/src/game.cpp \
+CMakeFiles/ludo.dir/src/drawer.cpp.o: /home/tomato/pr/search_algo/ludo/src/drawer.cpp \
   /home/tomato/pr/search_algo/ludo/include/ai.h \
   /home/tomato/pr/search_algo/ludo/include/board.h \
-  /home/tomato/pr/search_algo/ludo/include/board_printer.h \
-  /home/tomato/pr/search_algo/ludo/include/constants.h \
-  /home/tomato/pr/search_algo/ludo/include/game.h \
-  /home/tomato/pr/search_algo/ludo/include/grid.h \
-  /home/tomato/pr/search_algo/ludo/include/pawn.h \
-  /home/tomato/pr/search_algo/ludo/include/player.h \
-  /home/tomato/pr/search_algo/ludo/include/player_colour.h \
-  /home/tomato/pr/search_algo/ludo/include/player_path.h \
-  /usr/include/alloca.h \
-  /usr/include/asm-generic/errno-base.h \
-  /usr/include/asm-generic/errno.h \
-  /usr/include/asm/errno.h \
-  /usr/include/assert.h \
-  /usr/include/bits/atomic_wide_counter.h \
-  /usr/include/bits/byteswap.h \
-  /usr/include/bits/cpu-set.h \
-  /usr/include/bits/endian.h \
-  /usr/include/bits/endianness.h \
-  /usr/include/bits/errno.h \
-  /usr/include/bits/floatn-common.h \
-  /usr/include/bits/floatn.h \
-  /usr/include/bits/flt-eval-method.h \
-  /usr/include/bits/fp-fast.h \
-  /usr/include/bits/fp-logb.h \
-  /usr/include/bits/iscanonical.h \
-  /usr/include/bits/libc-header-start.h \
-  /usr/include/bits/libm-simd-decl-stubs.h \
-  /usr/include/bits/locale.h \
-  /usr/include/bits/long-double.h \
-  /usr/include/bits/math-vector.h \
-  /usr/include/bits/mathcalls-helper-functions.h \
-  /usr/include/bits/mathcalls-narrow.h \
-  /usr/include/bits/mathcalls.h \
-  /usr/include/bits/pthread_stack_min-dynamic.h \
-  /usr/include/bits/pthreadtypes-arch.h \
-  /usr/include/bits/pthreadtypes.h \
-  /usr/include/bits/sched.h \
-  /usr/include/bits/select.h \
-  /usr/include/bits/setjmp.h \
-  /usr/include/bits/stdint-intn.h \
-  /usr/include/bits/stdint-least.h \
-  /usr/include/bits/stdint-uintn.h \
-  /usr/include/bits/stdio_lim.h \
-  /usr/include/bits/stdlib-float.h \
-  /usr/include/bits/struct_mutex.h \
-  /usr/include/bits/struct_rwlock.h \
-  /usr/include/bits/thread-shared-types.h \
-  /usr/include/bits/time.h \
-  /usr/include/bits/time64.h \
-  /usr/include/bits/timesize.h \
-  /usr/include/bits/timex.h \
-  /usr/include/bits/types.h \
-  /usr/include/bits/types/FILE.h \
-  /usr/include/bits/types/__FILE.h \
-  /usr/include/bits/types/__fpos64_t.h \
-  /usr/include/bits/types/__fpos_t.h \
-  /usr/include/bits/types/__locale_t.h \
-  /usr/include/bits/types/__mbstate_t.h \
-  /usr/include/bits/types/__sigset_t.h \
-  /usr/include/bits/types/clock_t.h \
-  /usr/include/bits/types/clockid_t.h \
-  /usr/include/bits/types/cookie_io_functions_t.h \
-  /usr/include/bits/types/error_t.h \
-  /usr/include/bits/types/locale_t.h \
-  /usr/include/bits/types/mbstate_t.h \
-  /usr/include/bits/types/sigset_t.h \
-  /usr/include/bits/types/struct_FILE.h \
-  /usr/include/bits/types/struct___jmp_buf_tag.h \
-  /usr/include/bits/types/struct_itimerspec.h \
-  /usr/include/bits/types/struct_sched_param.h \
-  /usr/include/bits/types/struct_timespec.h \
-  /usr/include/bits/types/struct_timeval.h \
-  /usr/include/bits/types/struct_tm.h \
-  /usr/include/bits/types/time_t.h \
-  /usr/include/bits/types/timer_t.h \
-  /usr/include/bits/types/wint_t.h \
-  /usr/include/bits/typesizes.h \
-  /usr/include/bits/uintn-identity.h \
-  /usr/include/bits/waitflags.h \
-  /usr/include/bits/waitstatus.h \
-  /usr/include/bits/wchar.h \
-  /usr/include/bits/wctype-wchar.h \
-  /usr/include/bits/wordsize.h \
-  /usr/include/ctype.h \
-  /usr/include/endian.h \
-  /usr/include/errno.h \
-  /usr/include/features-time64.h \
-  /usr/include/features.h \
-  /usr/include/gnu/stubs-64.h \
-  /usr/include/gnu/stubs.h \
-  /usr/include/libintl.h \
-  /usr/include/linux/errno.h \
-  /usr/include/locale.h \
-  /usr/include/math.h \
-  /usr/include/pthread.h \
-  /usr/include/sched.h \
-  /usr/include/stdc-predef.h \
-  /usr/include/stdint.h \
-  /usr/include/stdio.h \
-  /usr/include/stdlib.h \
-  /usr/include/sys/cdefs.h \
-  /usr/include/sys/select.h \
-  /usr/include/sys/single_threaded.h \
-  /usr/include/sys/types.h \
-  /usr/include/time.h \
-  /usr/include/wchar.h \
-  /usr/include/wctype.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/array \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/backward/binders.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bit \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/algorithmfwd.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/alloc_traits.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/allocator.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/basic_ios.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/basic_ios.tcc \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/basic_string.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/basic_string.tcc \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/char_traits.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/charconv.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/codecvt.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/concept_check.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/cpp_type_traits.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/cxxabi_forced.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/cxxabi_init_exception.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/enable_special_members.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/erase_if.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/exception.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/exception_defines.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/exception_ptr.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/functexcept.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/functional_hash.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/hash_bytes.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/hashtable.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/hashtable_policy.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/invoke.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ios_base.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/istream.tcc \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/iterator_concepts.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/locale_classes.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/locale_classes.tcc \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/locale_conv.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/locale_facets.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/locale_facets.tcc \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/locale_facets_nonio.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/locale_facets_nonio.tcc \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/localefwd.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/max_size_type.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/memory_resource.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/memoryfwd.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/move.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/nested_exception.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/new_allocator.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/node_handle.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ostream.tcc \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ostream_insert.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/parse_numbers.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/postypes.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/predefined_ops.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ptr_traits.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/quoted_string.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/random.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/random.tcc \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/range_access.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ranges_algobase.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ranges_base.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ranges_cmp.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ranges_util.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/refwrap.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/requires_hosted.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/specfun.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/sstream.tcc \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/std_abs.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_algo.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_algobase.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_bvector.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_construct.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_function.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_heap.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_iterator.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_iterator_base_funcs.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_iterator_base_types.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_map.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_multimap.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_multiset.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_numeric.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_pair.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_set.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_tempbuf.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_tree.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_uninitialized.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_vector.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/streambuf.tcc \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/streambuf_iterator.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/string_view.tcc \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stringfwd.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/unicode-data.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/unicode.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/uniform_int_dist.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/unordered_map.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/uses_allocator.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/uses_allocator_args.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/utility.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/vector.tcc \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/version.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cassert \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cctype \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cerrno \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/charconv \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/clocale \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cmath \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/compare \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/concepts \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cstddef \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cstdint \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cstdio \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cstdlib \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ctime \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cwchar \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cwctype \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/debug/assertions.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/debug/debug.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/exception \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/aligned_buffer.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/alloc_traits.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/atomicity.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/numeric_traits.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/string_conversions.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/type_traits.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/format \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/initializer_list \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/iomanip \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ios \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/iosfwd \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/iostream \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/istream \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/limits \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/locale \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/map \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/new \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/numbers \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/numeric \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/optional \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ostream \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/pstl/execution_defs.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/pstl/glue_numeric_defs.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/pstl/pstl_config.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/random \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/set \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/span \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/sstream \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/stdexcept \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/streambuf \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/string \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/string_view \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/system_error \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/bessel_function.tcc \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/beta_function.tcc \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/ell_integral.tcc \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/exp_integral.tcc \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/gamma.tcc \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/hypergeometric.tcc \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/legendre_function.tcc \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/modified_bessel_func.tcc \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/poly_hermite.tcc \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/poly_laguerre.tcc \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/riemann_zeta.tcc \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/special_function_util.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tuple \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/type_traits \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/typeinfo \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/unordered_map \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/variant \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/vector \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/atomic_word.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/c++allocator.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/c++config.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/c++locale.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/cpu_defines.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/ctype_base.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/ctype_inline.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/error_constants.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/gthr-default.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/gthr.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/messages_members.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/opt_random.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/os_defines.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/time_members.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/stdarg.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/stddef.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/stdint.h
-
-CMakeFiles/ludo.dir/src/main.cpp.o: /home/tomato/pr/search_algo/ludo/src/main.cpp \
-  /home/tomato/pr/search_algo/ludo/include/board.h \
-  /home/tomato/pr/search_algo/ludo/include/board_printer.h \
-  /home/tomato/pr/search_algo/ludo/include/constants.h \
   /home/tomato/pr/search_algo/ludo/include/drawer.h \
   /home/tomato/pr/search_algo/ludo/include/game.h \
   /home/tomato/pr/search_algo/ludo/include/grid.h \
   /home/tomato/pr/search_algo/ludo/include/pawn.h \
   /home/tomato/pr/search_algo/ludo/include/player.h \
   /home/tomato/pr/search_algo/ludo/include/player_colour.h \
-  /home/tomato/pr/search_algo/ludo/include/player_path.h \
+  /home/tomato/pr/search_algo/ludo/include/utils.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
+  /usr/include/asm-generic/ioctl.h \
+  /usr/include/asm-generic/ioctls.h \
   /usr/include/asm/errno.h \
-  /usr/include/assert.h \
+  /usr/include/asm/ioctl.h \
+  /usr/include/asm/ioctls.h \
+  /usr/include/asm/unistd.h \
+  /usr/include/asm/unistd_64.h \
   /usr/include/bits/atomic_wide_counter.h \
   /usr/include/bits/byteswap.h \
+  /usr/include/bits/confname.h \
   /usr/include/bits/cpu-set.h \
   /usr/include/bits/endian.h \
   /usr/include/bits/endianness.h \
+  /usr/include/bits/environments.h \
   /usr/include/bits/errno.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
   /usr/include/bits/flt-eval-method.h \
   /usr/include/bits/fp-fast.h \
   /usr/include/bits/fp-logb.h \
+  /usr/include/bits/getopt_core.h \
+  /usr/include/bits/getopt_posix.h \
+  /usr/include/bits/ioctl-types.h \
+  /usr/include/bits/ioctls.h \
   /usr/include/bits/iscanonical.h \
   /usr/include/bits/libc-header-start.h \
   /usr/include/bits/libm-simd-decl-stubs.h \
+  /usr/include/bits/local_lim.h \
   /usr/include/bits/locale.h \
   /usr/include/bits/long-double.h \
   /usr/include/bits/math-vector.h \
   /usr/include/bits/mathcalls-helper-functions.h \
   /usr/include/bits/mathcalls-narrow.h \
   /usr/include/bits/mathcalls.h \
+  /usr/include/bits/posix1_lim.h \
+  /usr/include/bits/posix2_lim.h \
+  /usr/include/bits/posix_opt.h \
   /usr/include/bits/pthread_stack_min-dynamic.h \
   /usr/include/bits/pthreadtypes-arch.h \
   /usr/include/bits/pthreadtypes.h \
@@ -638,6 +793,7 @@ CMakeFiles/ludo.dir/src/main.cpp.o: /home/tomato/pr/search_algo/ludo/src/main.cp
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
+  /usr/include/bits/syscall.h \
   /usr/include/bits/thread-shared-types.h \
   /usr/include/bits/time.h \
   /usr/include/bits/time64.h \
@@ -670,11 +826,14 @@ CMakeFiles/ludo.dir/src/main.cpp.o: /home/tomato/pr/search_algo/ludo/src/main.cp
   /usr/include/bits/types/wint_t.h \
   /usr/include/bits/typesizes.h \
   /usr/include/bits/uintn-identity.h \
+  /usr/include/bits/uio_lim.h \
+  /usr/include/bits/unistd_ext.h \
   /usr/include/bits/waitflags.h \
   /usr/include/bits/waitstatus.h \
   /usr/include/bits/wchar.h \
   /usr/include/bits/wctype-wchar.h \
   /usr/include/bits/wordsize.h \
+  /usr/include/bits/xopen_lim.h \
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
@@ -683,7 +842,340 @@ CMakeFiles/ludo.dir/src/main.cpp.o: /home/tomato/pr/search_algo/ludo/src/main.cp
   /usr/include/gnu/stubs-64.h \
   /usr/include/gnu/stubs.h \
   /usr/include/libintl.h \
+  /usr/include/limits.h \
+  /usr/include/linux/close_range.h \
   /usr/include/linux/errno.h \
+  /usr/include/linux/ioctl.h \
+  /usr/include/linux/limits.h \
+  /usr/include/locale.h \
+  /usr/include/math.h \
+  /usr/include/pthread.h \
+  /usr/include/sched.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
+  /usr/include/stdio.h \
+  /usr/include/stdlib.h \
+  /usr/include/sys/cdefs.h \
+  /usr/include/sys/ioctl.h \
+  /usr/include/sys/select.h \
+  /usr/include/sys/single_threaded.h \
+  /usr/include/sys/syscall.h \
+  /usr/include/sys/ttydefaults.h \
+  /usr/include/sys/types.h \
+  /usr/include/syscall.h \
+  /usr/include/time.h \
+  /usr/include/unistd.h \
+  /usr/include/wchar.h \
+  /usr/include/wctype.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/array \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/backward/auto_ptr.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/backward/binders.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bit \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/algorithmfwd.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/align.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/alloc_traits.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/allocated_ptr.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/allocator.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/atomic_base.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/atomic_lockfree_defines.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/atomic_wait.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/basic_ios.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/basic_ios.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/basic_string.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/basic_string.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/char_traits.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/charconv.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/codecvt.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/concept_check.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/cpp_type_traits.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/cxxabi_forced.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/cxxabi_init_exception.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/enable_special_members.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/erase_if.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/exception.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/exception_defines.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/exception_ptr.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/functexcept.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/functional_hash.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/hash_bytes.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/invoke.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ios_base.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/istream.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/iterator_concepts.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/locale_classes.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/locale_classes.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/locale_conv.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/locale_facets.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/locale_facets.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/locale_facets_nonio.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/locale_facets_nonio.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/localefwd.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/max_size_type.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/memory_resource.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/memoryfwd.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/move.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/nested_exception.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/new_allocator.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/node_handle.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ostream.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ostream_insert.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/out_ptr.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/parse_numbers.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/postypes.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/predefined_ops.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ptr_traits.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/quoted_string.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/random.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/random.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/range_access.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ranges_algobase.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ranges_base.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ranges_cmp.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ranges_uninitialized.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ranges_util.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/refwrap.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/requires_hosted.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/shared_ptr.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/shared_ptr_atomic.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/shared_ptr_base.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/specfun.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/sstream.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/std_abs.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/std_mutex.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_algo.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_algobase.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_bvector.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_construct.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_function.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_heap.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_iterator.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_iterator_base_funcs.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_iterator_base_types.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_map.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_multimap.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_multiset.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_numeric.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_pair.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_raw_storage_iter.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_set.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_tempbuf.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_tree.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_uninitialized.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_vector.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/streambuf.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/streambuf_iterator.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/string_view.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stringfwd.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/unicode-data.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/unicode.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/uniform_int_dist.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/unique_ptr.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/uses_allocator.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/uses_allocator_args.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/utility.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/vector.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/version.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cctype \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cerrno \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/charconv \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/climits \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/clocale \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cmath \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/compare \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/concepts \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cstddef \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cstdint \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cstdio \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cstdlib \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ctime \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cwchar \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cwctype \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/debug/assertions.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/debug/debug.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/exception \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/aligned_buffer.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/alloc_traits.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/atomicity.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/concurrence.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/numeric_traits.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/string_conversions.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/type_traits.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/format \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/initializer_list \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/iomanip \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ios \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/iosfwd \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/iostream \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/istream \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/limits \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/locale \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/map \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/memory \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/new \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/numbers \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/numeric \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/optional \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ostream \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/pstl/execution_defs.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/pstl/glue_memory_defs.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/pstl/glue_numeric_defs.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/pstl/pstl_config.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/random \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/set \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/span \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/sstream \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/stdexcept \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/streambuf \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/string \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/string_view \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/system_error \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/bessel_function.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/beta_function.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/ell_integral.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/exp_integral.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/gamma.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/hypergeometric.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/legendre_function.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/modified_bessel_func.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/poly_hermite.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/poly_laguerre.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/riemann_zeta.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/special_function_util.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tuple \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/type_traits \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/typeinfo \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/variant \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/vector \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/atomic_word.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/c++allocator.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/c++config.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/c++locale.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/cpu_defines.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/ctype_base.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/ctype_inline.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/error_constants.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/gthr-default.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/gthr.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/messages_members.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/opt_random.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/os_defines.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/time_members.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/limits.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/stdarg.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/stddef.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/stdint.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/syslimits.h
+
+CMakeFiles/ludo.dir/src/game.cpp.o: /home/tomato/pr/search_algo/ludo/src/game.cpp \
+  /home/tomato/pr/search_algo/ludo/include/ai.h \
+  /home/tomato/pr/search_algo/ludo/include/board.h \
+  /home/tomato/pr/search_algo/ludo/include/board_printer.h \
+  /home/tomato/pr/search_algo/ludo/include/drawer.h \
+  /home/tomato/pr/search_algo/ludo/include/game.h \
+  /home/tomato/pr/search_algo/ludo/include/grid.h \
+  /home/tomato/pr/search_algo/ludo/include/pawn.h \
+  /home/tomato/pr/search_algo/ludo/include/player.h \
+  /home/tomato/pr/search_algo/ludo/include/player_colour.h \
+  /usr/include/alloca.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/asm/errno.h \
+  /usr/include/asm/unistd.h \
+  /usr/include/asm/unistd_64.h \
+  /usr/include/bits/atomic_wide_counter.h \
+  /usr/include/bits/byteswap.h \
+  /usr/include/bits/confname.h \
+  /usr/include/bits/cpu-set.h \
+  /usr/include/bits/endian.h \
+  /usr/include/bits/endianness.h \
+  /usr/include/bits/environments.h \
+  /usr/include/bits/errno.h \
+  /usr/include/bits/floatn-common.h \
+  /usr/include/bits/floatn.h \
+  /usr/include/bits/flt-eval-method.h \
+  /usr/include/bits/fp-fast.h \
+  /usr/include/bits/fp-logb.h \
+  /usr/include/bits/getopt_core.h \
+  /usr/include/bits/getopt_posix.h \
+  /usr/include/bits/iscanonical.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/libm-simd-decl-stubs.h \
+  /usr/include/bits/local_lim.h \
+  /usr/include/bits/locale.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/bits/math-vector.h \
+  /usr/include/bits/mathcalls-helper-functions.h \
+  /usr/include/bits/mathcalls-narrow.h \
+  /usr/include/bits/mathcalls.h \
+  /usr/include/bits/posix1_lim.h \
+  /usr/include/bits/posix2_lim.h \
+  /usr/include/bits/posix_opt.h \
+  /usr/include/bits/pthread_stack_min-dynamic.h \
+  /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/pthreadtypes.h \
+  /usr/include/bits/sched.h \
+  /usr/include/bits/select.h \
+  /usr/include/bits/setjmp.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdint-least.h \
+  /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-float.h \
+  /usr/include/bits/struct_mutex.h \
+  /usr/include/bits/struct_rwlock.h \
+  /usr/include/bits/syscall.h \
+  /usr/include/bits/thread-shared-types.h \
+  /usr/include/bits/time.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/timex.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/types/FILE.h \
+  /usr/include/bits/types/__FILE.h \
+  /usr/include/bits/types/__fpos64_t.h \
+  /usr/include/bits/types/__fpos_t.h \
+  /usr/include/bits/types/__locale_t.h \
+  /usr/include/bits/types/__mbstate_t.h \
+  /usr/include/bits/types/__sigset_t.h \
+  /usr/include/bits/types/clock_t.h \
+  /usr/include/bits/types/clockid_t.h \
+  /usr/include/bits/types/cookie_io_functions_t.h \
+  /usr/include/bits/types/error_t.h \
+  /usr/include/bits/types/locale_t.h \
+  /usr/include/bits/types/mbstate_t.h \
+  /usr/include/bits/types/sigset_t.h \
+  /usr/include/bits/types/struct_FILE.h \
+  /usr/include/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/bits/types/struct_itimerspec.h \
+  /usr/include/bits/types/struct_sched_param.h \
+  /usr/include/bits/types/struct_timespec.h \
+  /usr/include/bits/types/struct_timeval.h \
+  /usr/include/bits/types/struct_tm.h \
+  /usr/include/bits/types/time_t.h \
+  /usr/include/bits/types/timer_t.h \
+  /usr/include/bits/types/wint_t.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/uintn-identity.h \
+  /usr/include/bits/uio_lim.h \
+  /usr/include/bits/unistd_ext.h \
+  /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h \
+  /usr/include/bits/wchar.h \
+  /usr/include/bits/wctype-wchar.h \
+  /usr/include/bits/wordsize.h \
+  /usr/include/bits/xopen_lim.h \
+  /usr/include/ctype.h \
+  /usr/include/endian.h \
+  /usr/include/errno.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/gnu/stubs-64.h \
+  /usr/include/gnu/stubs.h \
+  /usr/include/libintl.h \
+  /usr/include/limits.h \
+  /usr/include/linux/close_range.h \
+  /usr/include/linux/errno.h \
+  /usr/include/linux/limits.h \
   /usr/include/locale.h \
   /usr/include/math.h \
   /usr/include/pthread.h \
@@ -695,16 +1187,25 @@ CMakeFiles/ludo.dir/src/main.cpp.o: /home/tomato/pr/search_algo/ludo/src/main.cp
   /usr/include/sys/cdefs.h \
   /usr/include/sys/select.h \
   /usr/include/sys/single_threaded.h \
+  /usr/include/sys/syscall.h \
   /usr/include/sys/types.h \
+  /usr/include/syscall.h \
   /usr/include/time.h \
+  /usr/include/unistd.h \
   /usr/include/wchar.h \
   /usr/include/wctype.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/array \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/backward/auto_ptr.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/backward/binders.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bit \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/algorithmfwd.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/align.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/alloc_traits.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/allocated_ptr.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/allocator.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/atomic_base.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/atomic_lockfree_defines.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/atomic_wait.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/basic_ios.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/basic_ios.tcc \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/basic_string.h \
@@ -747,6 +1248,7 @@ CMakeFiles/ludo.dir/src/main.cpp.o: /home/tomato/pr/search_algo/ludo/src/main.cp
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/node_handle.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ostream.tcc \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ostream_insert.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/out_ptr.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/parse_numbers.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/postypes.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/predefined_ops.h \
@@ -758,12 +1260,17 @@ CMakeFiles/ludo.dir/src/main.cpp.o: /home/tomato/pr/search_algo/ludo/src/main.cp
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ranges_algobase.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ranges_base.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ranges_cmp.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ranges_uninitialized.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ranges_util.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/refwrap.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/requires_hosted.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/shared_ptr.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/shared_ptr_atomic.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/shared_ptr_base.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/specfun.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/sstream.tcc \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/std_abs.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/std_mutex.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_algo.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_algobase.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_bvector.h \
@@ -778,6 +1285,7 @@ CMakeFiles/ludo.dir/src/main.cpp.o: /home/tomato/pr/search_algo/ludo/src/main.cp
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_multiset.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_numeric.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_pair.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_raw_storage_iter.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_set.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_tempbuf.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_tree.h \
@@ -790,16 +1298,17 @@ CMakeFiles/ludo.dir/src/main.cpp.o: /home/tomato/pr/search_algo/ludo/src/main.cp
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/unicode-data.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/unicode.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/uniform_int_dist.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/unique_ptr.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/unordered_map.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/uses_allocator.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/uses_allocator_args.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/utility.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/vector.tcc \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/version.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cassert \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cctype \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cerrno \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/charconv \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/climits \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/clocale \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cmath \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/compare \
@@ -817,6 +1326,7 @@ CMakeFiles/ludo.dir/src/main.cpp.o: /home/tomato/pr/search_algo/ludo/src/main.cp
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/aligned_buffer.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/alloc_traits.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/atomicity.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/concurrence.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/numeric_traits.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/string_conversions.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/type_traits.h \
@@ -830,12 +1340,14 @@ CMakeFiles/ludo.dir/src/main.cpp.o: /home/tomato/pr/search_algo/ludo/src/main.cp
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/limits \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/locale \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/map \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/memory \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/new \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/numbers \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/numeric \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/optional \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ostream \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/pstl/execution_defs.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/pstl/glue_memory_defs.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/pstl/glue_numeric_defs.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/pstl/pstl_config.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/random \
@@ -879,9 +1391,366 @@ CMakeFiles/ludo.dir/src/main.cpp.o: /home/tomato/pr/search_algo/ludo/src/main.cp
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/opt_random.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/os_defines.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/time_members.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/limits.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/stdarg.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/stddef.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/stdint.h
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/stdint.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/syslimits.h
+
+CMakeFiles/ludo.dir/src/main.cpp.o: /home/tomato/pr/search_algo/ludo/src/main.cpp \
+  /home/tomato/pr/search_algo/ludo/include/ai.h \
+  /home/tomato/pr/search_algo/ludo/include/board.h \
+  /home/tomato/pr/search_algo/ludo/include/drawer.h \
+  /home/tomato/pr/search_algo/ludo/include/game.h \
+  /home/tomato/pr/search_algo/ludo/include/grid.h \
+  /home/tomato/pr/search_algo/ludo/include/pawn.h \
+  /home/tomato/pr/search_algo/ludo/include/player.h \
+  /home/tomato/pr/search_algo/ludo/include/player_colour.h \
+  /home/tomato/pr/search_algo/ludo/include/utils.h \
+  /usr/include/alloca.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/asm-generic/ioctl.h \
+  /usr/include/asm-generic/ioctls.h \
+  /usr/include/asm/errno.h \
+  /usr/include/asm/ioctl.h \
+  /usr/include/asm/ioctls.h \
+  /usr/include/asm/unistd.h \
+  /usr/include/asm/unistd_64.h \
+  /usr/include/bits/atomic_wide_counter.h \
+  /usr/include/bits/byteswap.h \
+  /usr/include/bits/confname.h \
+  /usr/include/bits/cpu-set.h \
+  /usr/include/bits/endian.h \
+  /usr/include/bits/endianness.h \
+  /usr/include/bits/environments.h \
+  /usr/include/bits/errno.h \
+  /usr/include/bits/floatn-common.h \
+  /usr/include/bits/floatn.h \
+  /usr/include/bits/flt-eval-method.h \
+  /usr/include/bits/fp-fast.h \
+  /usr/include/bits/fp-logb.h \
+  /usr/include/bits/getopt_core.h \
+  /usr/include/bits/getopt_posix.h \
+  /usr/include/bits/ioctl-types.h \
+  /usr/include/bits/ioctls.h \
+  /usr/include/bits/iscanonical.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/libm-simd-decl-stubs.h \
+  /usr/include/bits/local_lim.h \
+  /usr/include/bits/locale.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/bits/math-vector.h \
+  /usr/include/bits/mathcalls-helper-functions.h \
+  /usr/include/bits/mathcalls-narrow.h \
+  /usr/include/bits/mathcalls.h \
+  /usr/include/bits/posix1_lim.h \
+  /usr/include/bits/posix2_lim.h \
+  /usr/include/bits/posix_opt.h \
+  /usr/include/bits/pthread_stack_min-dynamic.h \
+  /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/pthreadtypes.h \
+  /usr/include/bits/sched.h \
+  /usr/include/bits/select.h \
+  /usr/include/bits/semaphore.h \
+  /usr/include/bits/setjmp.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdint-least.h \
+  /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-float.h \
+  /usr/include/bits/struct_mutex.h \
+  /usr/include/bits/struct_rwlock.h \
+  /usr/include/bits/syscall.h \
+  /usr/include/bits/thread-shared-types.h \
+  /usr/include/bits/time.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/timex.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/types/FILE.h \
+  /usr/include/bits/types/__FILE.h \
+  /usr/include/bits/types/__fpos64_t.h \
+  /usr/include/bits/types/__fpos_t.h \
+  /usr/include/bits/types/__locale_t.h \
+  /usr/include/bits/types/__mbstate_t.h \
+  /usr/include/bits/types/__sigset_t.h \
+  /usr/include/bits/types/clock_t.h \
+  /usr/include/bits/types/clockid_t.h \
+  /usr/include/bits/types/cookie_io_functions_t.h \
+  /usr/include/bits/types/error_t.h \
+  /usr/include/bits/types/locale_t.h \
+  /usr/include/bits/types/mbstate_t.h \
+  /usr/include/bits/types/sigset_t.h \
+  /usr/include/bits/types/struct_FILE.h \
+  /usr/include/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/bits/types/struct_itimerspec.h \
+  /usr/include/bits/types/struct_sched_param.h \
+  /usr/include/bits/types/struct_timespec.h \
+  /usr/include/bits/types/struct_timeval.h \
+  /usr/include/bits/types/struct_tm.h \
+  /usr/include/bits/types/time_t.h \
+  /usr/include/bits/types/timer_t.h \
+  /usr/include/bits/types/wint_t.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/uintn-identity.h \
+  /usr/include/bits/uio_lim.h \
+  /usr/include/bits/unistd_ext.h \
+  /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h \
+  /usr/include/bits/wchar.h \
+  /usr/include/bits/wctype-wchar.h \
+  /usr/include/bits/wordsize.h \
+  /usr/include/bits/xopen_lim.h \
+  /usr/include/ctype.h \
+  /usr/include/endian.h \
+  /usr/include/errno.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/gnu/stubs-64.h \
+  /usr/include/gnu/stubs.h \
+  /usr/include/libintl.h \
+  /usr/include/limits.h \
+  /usr/include/linux/close_range.h \
+  /usr/include/linux/errno.h \
+  /usr/include/linux/ioctl.h \
+  /usr/include/linux/limits.h \
+  /usr/include/locale.h \
+  /usr/include/math.h \
+  /usr/include/pthread.h \
+  /usr/include/sched.h \
+  /usr/include/semaphore.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
+  /usr/include/stdio.h \
+  /usr/include/stdlib.h \
+  /usr/include/sys/cdefs.h \
+  /usr/include/sys/ioctl.h \
+  /usr/include/sys/select.h \
+  /usr/include/sys/single_threaded.h \
+  /usr/include/sys/syscall.h \
+  /usr/include/sys/time.h \
+  /usr/include/sys/ttydefaults.h \
+  /usr/include/sys/types.h \
+  /usr/include/syscall.h \
+  /usr/include/time.h \
+  /usr/include/unistd.h \
+  /usr/include/wchar.h \
+  /usr/include/wctype.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/array \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/atomic \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/backward/auto_ptr.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/backward/binders.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bit \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/algorithmfwd.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/align.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/alloc_traits.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/allocated_ptr.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/allocator.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/atomic_base.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/atomic_lockfree_defines.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/atomic_timed_wait.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/atomic_wait.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/basic_ios.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/basic_ios.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/basic_string.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/basic_string.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/char_traits.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/charconv.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/chrono.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/chrono_io.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/codecvt.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/concept_check.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/cpp_type_traits.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/cxxabi_forced.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/cxxabi_init_exception.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/enable_special_members.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/erase_if.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/exception.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/exception_defines.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/exception_ptr.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/fstream.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/functexcept.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/functional_hash.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/hash_bytes.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/invoke.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ios_base.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/istream.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/iterator_concepts.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/locale_classes.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/locale_classes.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/locale_conv.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/locale_facets.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/locale_facets.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/locale_facets_nonio.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/locale_facets_nonio.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/localefwd.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/max_size_type.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/memory_resource.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/memoryfwd.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/move.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/nested_exception.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/new_allocator.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/node_handle.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ostream.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ostream_insert.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/out_ptr.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/parse_numbers.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/postypes.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/predefined_ops.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ptr_traits.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/quoted_string.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/random.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/random.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/range_access.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ranges_algobase.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ranges_base.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ranges_cmp.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ranges_uninitialized.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ranges_util.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/refwrap.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/requires_hosted.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/semaphore_base.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/shared_ptr.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/shared_ptr_atomic.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/shared_ptr_base.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/specfun.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/sstream.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/std_abs.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/std_mutex.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/std_thread.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_algo.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_algobase.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_bvector.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_construct.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_function.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_heap.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_iterator.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_iterator_base_funcs.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_iterator_base_types.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_map.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_multimap.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_multiset.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_numeric.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_pair.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_raw_storage_iter.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_set.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_tempbuf.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_tree.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_uninitialized.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_vector.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/streambuf.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/streambuf_iterator.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/string_view.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stringfwd.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/this_thread_sleep.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/unicode-data.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/unicode.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/uniform_int_dist.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/unique_ptr.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/uses_allocator.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/uses_allocator_args.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/utility.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/vector.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/version.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cctype \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cerrno \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/charconv \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/chrono \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/climits \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/clocale \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cmath \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/compare \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/concepts \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cstddef \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cstdint \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cstdio \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cstdlib \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ctime \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cwchar \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cwctype \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/debug/assertions.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/debug/debug.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/exception \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/aligned_buffer.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/alloc_traits.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/atomicity.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/concurrence.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/numeric_traits.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/string_conversions.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/type_traits.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/format \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/fstream \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/initializer_list \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/iomanip \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ios \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/iosfwd \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/iostream \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/istream \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/limits \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/locale \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/map \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/memory \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/new \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/numbers \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/numeric \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/optional \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ostream \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/pstl/execution_defs.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/pstl/glue_memory_defs.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/pstl/glue_numeric_defs.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/pstl/pstl_config.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/random \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ratio \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/semaphore \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/set \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/span \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/sstream \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/stdexcept \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/stop_token \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/streambuf \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/string \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/string_view \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/system_error \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/thread \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/bessel_function.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/beta_function.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/ell_integral.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/exp_integral.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/gamma.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/hypergeometric.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/legendre_function.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/modified_bessel_func.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/poly_hermite.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/poly_laguerre.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/riemann_zeta.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/special_function_util.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tuple \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/type_traits \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/typeinfo \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/variant \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/vector \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/atomic_word.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/basic_file.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/c++allocator.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/c++config.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/c++io.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/c++locale.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/cpu_defines.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/ctype_base.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/ctype_inline.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/error_constants.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/gthr-default.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/gthr.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/messages_members.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/opt_random.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/os_defines.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/time_members.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/limits.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/stdarg.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/stddef.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/stdint.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/syslimits.h
 
 CMakeFiles/ludo.dir/src/pawn.cpp.o: /home/tomato/pr/search_algo/ludo/src/pawn.cpp \
   /home/tomato/pr/search_algo/ludo/include/pawn.h \
@@ -1085,7 +1954,6 @@ CMakeFiles/ludo.dir/src/player.cpp.o: /home/tomato/pr/search_algo/ludo/src/playe
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
   /usr/include/asm/errno.h \
-  /usr/include/assert.h \
   /usr/include/bits/atomic_wide_counter.h \
   /usr/include/bits/byteswap.h \
   /usr/include/bits/cpu-set.h \
@@ -1258,7 +2126,6 @@ CMakeFiles/ludo.dir/src/player.cpp.o: /home/tomato/pr/search_algo/ludo/src/playe
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/utility.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/vector.tcc \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/version.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cassert \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cctype \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cerrno \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/charconv \
@@ -1507,6 +2374,8 @@ ludo: /lib64/ld-linux-x86-64.so.2 \
   /usr/lib64/libncurses.so \
   /usr/lib64/libtinfo.so \
   CMakeFiles/ludo.dir/src/ai.cpp.o \
+  CMakeFiles/ludo.dir/src/board.cpp.o \
+  CMakeFiles/ludo.dir/src/drawer.cpp.o \
   CMakeFiles/ludo.dir/src/game.cpp.o \
   CMakeFiles/ludo.dir/src/main.cpp.o \
   CMakeFiles/ludo.dir/src/pawn.cpp.o \
@@ -1516,19 +2385,17 @@ ludo: /lib64/ld-linux-x86-64.so.2 \
 
 CMakeFiles/ludo.dir/src/player.cpp.o:
 
-CMakeFiles/ludo.dir/src/ai.cpp.o:
+CMakeFiles/ludo.dir/src/drawer.cpp.o:
+
+CMakeFiles/ludo.dir/src/board.cpp.o:
 
 /usr/lib64/libform.so:
 
 /usr/lib64/libc_nonshared.a:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/libstdc++.so:
-
 /usr/lib/gcc/x86_64-pc-linux-gnu/14/libgcc_s.so:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14/libgcc.a:
-
-/usr/lib64/libm.so:
 
 /usr/lib64/crtn.o:
 
@@ -1536,17 +2403,29 @@ CMakeFiles/ludo.dir/src/ai.cpp.o:
 
 /lib64/ld-linux-x86-64.so.2:
 
-/home/tomato/pr/search_algo/ludo/src/player_path.cpp:
+/usr/include/sys/ttydefaults.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/math.h:
+/usr/include/sys/ioctl.h:
 
-/home/tomato/pr/search_algo/ludo/src/pawn.cpp:
+/usr/include/bits/ioctls.h:
+
+/usr/include/asm/ioctls.h:
+
+/usr/include/asm/ioctl.h:
+
+/usr/include/asm-generic/ioctls.h:
+
+/usr/include/asm-generic/ioctl.h:
+
+/home/tomato/pr/search_algo/ludo/include/utils.h:
 
 /home/tomato/pr/search_algo/ludo/include/drawer.h:
 
-/home/tomato/pr/search_algo/ludo/src/main.cpp:
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/crtendS.o:
 
-/home/tomato/pr/search_algo/ludo/src/game.cpp:
+/home/tomato/pr/search_algo/ludo/include/constants.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/syslimits.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/stdint.h:
 
@@ -1554,17 +2433,17 @@ CMakeFiles/ludo.dir/src/ai.cpp.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/stddef.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/stdarg.h:
+/home/tomato/pr/search_algo/ludo/include/player_path.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/opt_random.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/messages_members.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/gthr-default.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/error_constants.h:
-
 /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/ctype_inline.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/c++locale.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/c++io.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/c++config.h:
 
@@ -1572,9 +2451,19 @@ CMakeFiles/ludo.dir/src/ai.cpp.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/atomic_word.h:
 
+CMakeFiles/ludo.dir/src/ai.cpp.o:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/version:
+
 /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/vector:
 
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/valarray:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/unordered_set:
+
 /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/typeinfo:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/typeindex:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/type_traits:
 
@@ -1586,8 +2475,6 @@ CMakeFiles/ludo.dir/src/ai.cpp.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/hypergeometric.tcc:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/gamma.tcc:
-
 CMakeFiles/ludo.dir/src/player_path.cpp.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/ell_integral.tcc:
@@ -1598,21 +2485,745 @@ CMakeFiles/ludo.dir/src/player_path.cpp.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/system_error:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/cpp_type_traits.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/stdfloat:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/charconv.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/string_view:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/type_traits.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/stdexcept:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/span:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ratio:
+
+/usr/lib64/libm.so:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/queue:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/pstl/pstl_config.h:
+
+/home/tomato/pr/search_algo/ludo/src/main.cpp:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/pstl/glue_memory_defs.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/pstl/execution_defs.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/print:
+
+CMakeFiles/ludo.dir/src/main.cpp.o:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ostream:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/optional:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/numeric:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/mutex:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/memory_resource:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/memory:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/locale:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/limits:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/latch:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/iterator:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/istream:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/cxxabi_forced.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/variant:
 
-/usr/include/bits/errno.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/iosfwd:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/iomanip:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/future:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/fstream:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/forward_list:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/format:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/gamma.tcc:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/filesystem:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/fenv.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/string_conversions.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/concurrence.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/map:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cwctype:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/stop_token:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cwchar:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cuchar:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cstdio:
+
+/usr/include/bits/ioctl-types.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cstddef:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/shared_mutex:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cstdbool:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/csignal:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/new:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/coroutine:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/condition_variable:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/stacktrace:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/complex:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/codecvt:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/stack:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cstdint:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/clocale:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/climits:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ciso646:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cinttypes:
+
+/home/tomato/pr/search_algo/ludo/src/game.cpp:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/chrono:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/debug/debug.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ctgmath:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/charconv:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cfloat:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cerrno:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/generator:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ccomplex:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/string:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cassert:
+
+CMakeFiles/ludo.dir/src/pawn.cpp.o:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/streambuf:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/version.h:
+
+/home/tomato/pr/search_algo/ludo/src/drawer.cpp:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/vector.tcc:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/valarray_before.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/valarray_array.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/limits.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/uses_allocator_args.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/uses_allocator.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/cpu_defines.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/unordered_map.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/unicode.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/random:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/unicode-data.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/this_thread_sleep.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stringfwd.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/string_view.tcc:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/functional:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/valarray_array.tcc:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stream_iterator.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_vector.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/crtbeginS.o:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_tree.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_tempbuf.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_set.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_relops.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_queue.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/numbers:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_pair.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_numeric.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_list.h:
+
+/lib64/libc.so.6:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/set:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/expected:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_iterator.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_heap.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_function.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_bvector.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/math.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/std_mutex.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/std_function.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ranges:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/sstream.tcc:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/specfun.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/error_constants.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/slice_array.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/shared_ptr_base.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/scoped_allocator:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/shared_ptr_atomic.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/concepts:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_stack.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/shared_ptr.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/semaphore_base.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/requires_hosted.h:
+
+/home/tomato/pr/search_algo/ludo/src/player_path.cpp:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/regex_scanner.tcc:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/regex_executor.tcc:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/regex_executor.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/libstdc++.so:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/regex_constants.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/stdarg.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/regex_scanner.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/regex_compiler.tcc:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/regex_compiler.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cfenv:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/regex_automaton.h:
+
+/usr/include/features-time64.h:
+
+/usr/include/bits/wctype-wchar.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/modified_bessel_func.tcc:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cstdlib:
+
+/usr/include/sys/types.h:
+
+/usr/include/bits/timesize.h:
+
+/usr/include/bits/sigcontext.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/mofunc_impl.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/utility:
+
+/usr/include/bits/types/struct_tm.h:
+
+/usr/lib64/libc.so:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_algo.h:
+
+/usr/include/ctype.h:
+
+/usr/include/bits/types/struct_sched_param.h:
+
+/usr/include/bits/types/struct_itimerspec.h:
+
+/usr/include/bits/struct_rwlock.h:
+
+/usr/include/bits/ss_flags.h:
+
+/usr/include/bits/types/siginfo_t.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_raw_storage_iter.h:
+
+/usr/include/bits/xopen_lim.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/locale_facets_nonio.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ostream.tcc:
+
+/usr/include/bits/types/sigevent_t.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ranges_algo.h:
+
+/usr/include/bits/semaphore.h:
+
+/usr/include/bits/types/clock_t.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/sstream:
+
+/usr/include/bits/mathcalls.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/time_members.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/unique_lock.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/locale_facets.h:
+
+/usr/include/bits/types/__sigset_t.h:
+
+/usr/include/bits/types/__locale_t.h:
+
+CMakeFiles/ludo.dir/src/game.cpp.o:
+
+/usr/include/bits/types/__fpos64_t.h:
+
+/usr/include/bits/types/FILE.h:
 
 /usr/include/bits/timex.h:
 
-/usr/include/time.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/stdatomic.h:
+
+/usr/include/bits/errno.h:
+
+/usr/include/bits/stdlib-float.h:
+
+/usr/include/bits/thread-shared-types.h:
+
+/usr/include/features.h:
+
+/usr/include/bits/sched.h:
+
+/usr/include/bits/types/__FILE.h:
+
+/usr/include/bits/types/struct_timeval.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_deque.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/regex_error.h:
+
+/usr/include/bits/time.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/semaphore:
+
+/usr/include/bits/types/__mbstate_t.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/type_traits.h:
+
+/usr/include/semaphore.h:
+
+/usr/include/bits/stdint-least.h:
+
+/usr/include/bits/types/error_t.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_iterator_base_types.h:
+
+/usr/include/linux/close_range.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/atomic_base.h:
+
+/usr/include/bits/sigstksz.h:
+
+/usr/include/bits/signum-generic.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/uniform_int_dist.h:
+
+/home/tomato/pr/search_algo/ludo/include/pawn.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/backward/binders.h:
+
+/usr/include/bits/types/struct_sigstack.h:
+
+/usr/include/bits/types/stack_t.h:
+
+/usr/include/bits/posix2_lim.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/basic_file.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/exception:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_construct.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/atomic:
+
+/usr/include/bits/sigevent-consts.h:
+
+/usr/include/bits/stdint-intn.h:
+
+/usr/include/bits/types/clockid_t.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/unordered_map:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/streambuf.tcc:
+
+/usr/include/bits/atomic_wide_counter.h:
+
+/usr/include/bits/posix_opt.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/stdc++.h:
+
+/usr/include/bits/syscall.h:
+
+/usr/include/bits/iscanonical.h:
+
+/usr/include/bits/locale.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/locale_classes.tcc:
+
+/usr/include/bits/uintn-identity.h:
+
+/usr/include/bits/floatn-common.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/alloc_traits.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/std_abs.h:
+
+/usr/include/bits/long-double.h:
+
+/usr/include/bits/types/sig_atomic_t.h:
+
+/usr/include/bits/types/__fpos_t.h:
+
+/usr/include/asm/unistd_64.h:
+
+/usr/include/bits/types/struct_FILE.h:
+
+/usr/include/bits/environments.h:
+
+/usr/include/linux/ioctl.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/list.tcc:
+
+/usr/include/bits/fp-logb.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ctime:
+
+/usr/include/asm-generic/errno.h:
+
+/home/tomato/pr/search_algo/ludo/include/game.h:
+
+/usr/include/bits/math-vector.h:
+
+/usr/include/bits/uio_lim.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/c++locale.h:
+
+/usr/include/asm/unistd.h:
+
+/usr/include/bits/flt-eval-method.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/erase_if.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/libgcc_s.so.1:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/compare:
+
+/home/tomato/pr/search_algo/ludo/include/player_colour.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_multimap.h:
+
+/usr/include/bits/libm-simd-decl-stubs.h:
+
+/usr/include/bits/fenv.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/nested_exception.h:
+
+/usr/include/bits/types/sigval_t.h:
+
+/usr/include/bits/struct_mutex.h:
+
+/home/tomato/pr/search_algo/ludo/include/node.h:
+
+/usr/lib64/crti.o:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/stdio.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/regex_automaton.tcc:
+
+/usr/include/bits/confname.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/stdalign.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ostream_insert.h:
+
+/usr/include/bits/types/sigset_t.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/locale_conv.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/usr/include/bits/types/__sigval_t.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/bits/floatn.h:
+
+/home/tomato/pr/search_algo/ludo/src/player.cpp:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/spanstream:
+
+/usr/include/bits/types/wint_t.h:
+
+/home/tomato/pr/search_algo/ludo/include/ai.h:
+
+/usr/include/asm-generic/errno-base.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/locale_facets.tcc:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/regex.tcc:
+
+/usr/include/bits/byteswap.h:
+
+/usr/lib64/Scrt1.o:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/exception.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/move_only_function.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tuple:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/syncstream:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/random.h:
+
+/home/tomato/pr/search_algo/ludo/include/grid.h:
+
+/usr/include/bits/pthreadtypes-arch.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/os_defines.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/invoke.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/getopt_core.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cstdalign:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_algobase.h:
+
+/usr/include/bits/sigstack.h:
+
+/usr/include/bits/siginfo-consts-arch.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/debug/assertions.h:
+
+/usr/include/bits/siginfo-arch.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/enable_special_members.h:
+
+/usr/include/errno.h:
+
+/usr/include/bits/getopt_posix.h:
+
+/usr/include/bits/sigaction.h:
+
+/home/tomato/pr/search_algo/ludo/include/board_printer.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/pstl/glue_numeric_defs.h:
+
+/usr/include/bits/types/time_t.h:
+
+/usr/include/bits/mathcalls-helper-functions.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ios_base.h:
+
+/usr/include/string.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/refwrap.h:
+
+/usr/include/bits/types/timer_t.h:
+
+/usr/include/bits/mathcalls-narrow.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/gslice_array.h:
+
+/usr/lib64/libtinfo.so:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/source_location:
+
+/usr/include/uchar.h:
+
+/usr/include/bits/pthread_stack_min-dynamic.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ios:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/aligned_buffer.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/bits/types/struct_timespec.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bitset:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/locale_classes.h:
+
+/usr/include/asm/errno.h:
+
+/usr/include/bits/stdint-uintn.h:
+
+/usr/include/bits/select.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/ctype_base.h:
+
+/home/tomato/pr/search_algo/ludo/src/ai.cpp:
+
+/usr/include/alloca.h:
+
+/usr/include/bits/waitstatus.h:
+
+/usr/include/bits/wchar.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/deque.tcc:
+
+/usr/include/bits/types/struct___jmp_buf_tag.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cmath:
+
+/usr/include/bits/setjmp.h:
+
+/usr/include/bits/local_lim.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/stdbool.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/istream.tcc:
+
+/usr/include/fenv.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/atomic_wait.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/valarray_after.h:
+
+/usr/include/bits/libc-header-start.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/pstl/glue_algorithm_defs.h:
+
+/usr/include/bits/siginfo-consts.h:
+
+/usr/include/inttypes.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/regex.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_multiset.h:
+
+/usr/include/bits/endianness.h:
+
+/usr/include/libintl.h:
+
+/usr/include/limits.h:
+
+/usr/include/bits/sigthread.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/allocator.h:
+
+/usr/include/linux/errno.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/endian.h:
+
+/usr/include/stdint.h:
+
+/usr/include/locale.h:
+
+/usr/include/math.h:
+
+/usr/include/pthread.h:
+
+/usr/include/wctype.h:
+
+/usr/include/bits/fp-fast.h:
+
+/usr/include/sched.h:
+
+/usr/include/setjmp.h:
+
+/usr/include/unistd.h:
+
+/usr/include/sys/ucontext.h:
+
+/usr/include/stdc-predef.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/barrier:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/thread:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cstring:
+
+/usr/include/stdlib.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/std_thread.h:
+
+/home/tomato/pr/search_algo/ludo/include/player.h:
+
+/usr/include/signal.h:
+
+/usr/include/strings.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/fs_path.h:
+
+/usr/include/sys/select.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/riemann_zeta.tcc:
 
@@ -1620,99 +3231,75 @@ CMakeFiles/ludo.dir/src/player_path.cpp.o:
 
 /usr/include/sys/single_threaded.h:
 
-/usr/include/sys/select.h:
+/home/tomato/pr/search_algo/ludo/src/pawn.cpp:
 
-/usr/include/sys/cdefs.h:
+/usr/include/bits/signum-arch.h:
 
-/usr/include/stdlib.h:
+/usr/include/sys/syscall.h:
 
-/usr/include/pthread.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/new_allocator.h:
 
-/usr/include/linux/errno.h:
+/usr/include/sys/time.h:
 
-/usr/include/gnu/stubs-64.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/range_access.h:
 
-/usr/include/features-time64.h:
+/usr/include/time.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bit:
+/home/tomato/pr/search_algo/ludo/include/board.h:
+
+/usr/include/bits/posix1_lim.h:
+
+/usr/include/wchar.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/float.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/algorithm:
+
+/usr/include/bits/cpu-set.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/cxxabi_init_exception.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/node_handle.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/any:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/regex:
+
+/usr/include/assert.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/array:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/backward/auto_ptr.h:
 
 /usr/include/bits/waitflags.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cstdio:
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bit:
 
-/usr/include/bits/wctype-wchar.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/numeric_traits.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/nested_exception.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/algorithmfwd.h:
 
-/usr/include/bits/timesize.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/align.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_tempbuf.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/elements_of.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/backward/binders.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/list:
 
-/usr/include/locale.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/allocated_ptr.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/specfun.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/functional_hash.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_algobase.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/iomanip:
-
-/usr/include/bits/types/struct_tm.h:
-
-/usr/include/bits/types/struct_timespec.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/locale:
-
-/usr/include/bits/types/struct_sched_param.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/istream.tcc:
-
-/usr/include/bits/types/struct_itimerspec.h:
-
-/usr/include/bits/struct_rwlock.h:
-
-/usr/include/bits/types/struct_FILE.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/atomic_futex.h:
 
 /usr/include/bits/types/mbstate_t.h:
 
-/usr/include/bits/types/clock_t.h:
+/usr/include/bits/signal_ext.h:
 
-/usr/include/bits/types/__fpos_t.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ranges_uninitialized.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/time_members.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/atomic_lockfree_defines.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/locale_facets.h:
-
-/usr/include/bits/types/__sigset_t.h:
-
-/usr/include/bits/types/__mbstate_t.h:
-
-/usr/include/bits/time.h:
-
-/usr/include/bits/stdio_lim.h:
-
-/usr/include/bits/types/__locale_t.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cstddef:
-
-/usr/include/bits/libc-header-start.h:
-
-/usr/include/math.h:
-
-/usr/include/gnu/stubs.h:
-
-/usr/include/bits/pthreadtypes-arch.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/os_defines.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/invoke.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ios_base.h:
-
-/usr/include/bits/iscanonical.h:
-
-/usr/include/bits/types/error_t.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/fs_dir.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_iterator_base_funcs.h:
 
@@ -1722,205 +3309,57 @@ CMakeFiles/ludo.dir/src/player_path.cpp.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/basic_string.tcc:
 
-/usr/include/wctype.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/basic_string.h:
 
-/usr/include/sched.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/atomicity.h:
 
-/usr/include/bits/fp-fast.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/char_traits.h:
 
-/usr/include/errno.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/charconv.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/variant:
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_map.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/iosfwd:
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/concept_check.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/hash_bytes.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/chrono.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/functexcept.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/iostream:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/unordered_map:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/streambuf.tcc:
-
-/usr/include/bits/atomic_wide_counter.h:
-
-/usr/include/bits/locale.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/chrono_io.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/codecvt.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/libgcc_s.so.1:
+/usr/include/bits/unistd_ext.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/compare:
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/cpp_type_traits.h:
 
-/home/tomato/pr/search_algo/ludo/include/player_colour.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/csetjmp:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/locale_classes.tcc:
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/forward_list.h:
 
-/usr/include/bits/uintn-identity.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/cxxabi_forced.h:
 
-/usr/include/wchar.h:
-
-/home/tomato/pr/search_algo/ludo/include/board.h:
-
-/usr/include/bits/typesizes.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/limits:
-
-/usr/include/bits/struct_mutex.h:
-
-/usr/include/bits/stdlib-float.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/array:
-
-/usr/include/assert.h:
-
-/usr/include/bits/fp-logb.h:
-
-/home/tomato/pr/search_algo/ludo/include/player.h:
-
-/home/tomato/pr/search_algo/ludo/src/player.cpp:
-
-/usr/include/bits/types/wint_t.h:
-
-/home/tomato/pr/search_algo/ludo/include/ai.h:
-
-/usr/include/asm-generic/errno-base.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/opt_random.h:
-
-/home/tomato/pr/search_algo/ludo/include/player_path.h:
-
-/usr/include/bits/floatn-common.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/ctype_base.h:
-
-/home/tomato/pr/search_algo/ludo/src/ai.cpp:
-
-/usr/include/alloca.h:
-
-/usr/include/bits/stdint-least.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/crtendS.o:
-
-/home/tomato/pr/search_algo/ludo/include/constants.h:
-
-/usr/lib64/Scrt1.o:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/exception.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/locale_conv.h:
-
-/home/tomato/pr/search_algo/ludo/include/game.h:
-
-CMakeFiles/ludo.dir/src/main.cpp.o:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ostream:
-
-/usr/include/bits/types/FILE.h:
-
-/usr/include/bits/byteswap.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tuple:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/random.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stringfwd.h:
-
-/home/tomato/pr/search_algo/ludo/include/grid.h:
-
-/usr/include/stdc-predef.h:
-
-/usr/include/bits/floatn.h:
-
-/usr/include/bits/math-vector.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/allocator.h:
-
-/usr/lib64/crti.o:
-
-/usr/include/bits/wordsize.h:
-
-/usr/include/stdio.h:
-
-/usr/include/bits/types/timer_t.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/numeric:
-
-/usr/include/bits/mathcalls-narrow.h:
-
-/usr/lib64/libtinfo.so:
-
-/usr/include/bits/pthread_stack_min-dynamic.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/format:
-
-/usr/include/stdint.h:
-
-/usr/include/endian.h:
-
-/usr/include/bits/select.h:
-
-CMakeFiles/ludo.dir/src/game.cpp.o:
-
-/usr/include/bits/types/__fpos64_t.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/basic_string.h:
-
-/usr/include/bits/waitstatus.h:
-
-/usr/include/bits/wchar.h:
-
-/usr/include/bits/types/struct___jmp_buf_tag.h:
-
-/usr/include/bits/types/clockid_t.h:
-
-/usr/include/bits/stdint-intn.h:
-
-/usr/include/bits/libm-simd-decl-stubs.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_multimap.h:
-
-/usr/include/bits/types/struct_timeval.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/debug/assertions.h:
-
-/usr/include/bits/mathcalls-helper-functions.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/refwrap.h:
-
-/usr/include/bits/cpu-set.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/cxxabi_init_exception.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/node_handle.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cerrno:
-
-/usr/include/bits/thread-shared-types.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/vector.tcc:
-
-/usr/include/bits/endian.h:
-
-/usr/include/bits/types.h:
-
-/usr/include/features.h:
-
-/usr/include/bits/sched.h:
-
-/usr/include/bits/types/__FILE.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/enable_special_members.h:
-
-/usr/include/bits/flt-eval-method.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/erase_if.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/indirect_array.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/exception_ptr.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/functional_hash.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/forward_list.tcc:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/deque:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/fs_fwd.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/fs_ops.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/iostream:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/functexcept.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/hash_bytes.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/fstream.tcc:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/unique_ptr.h:
+
+/usr/include/syscall.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/hashtable.h:
 
@@ -1928,35 +3367,25 @@ CMakeFiles/ludo.dir/src/game.cpp.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/iterator_concepts.h:
 
-/usr/include/bits/stdint-uintn.h:
-
-/usr/include/asm/errno.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/locale_classes.h:
-
-/usr/include/bits/types/cookie_io_functions_t.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/streambuf_iterator.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/locale_facets.tcc:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/locale_facets_nonio.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ostream.tcc:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/span:
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/unordered_set.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/locale_facets_nonio.tcc:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/gthr.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ptr_traits.h:
-
 /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/initializer_list:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/atomic_timed_wait.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ptr_traits.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/exception_defines.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/localefwd.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/mask_array.h:
+
+/home/tomato/pr/search_algo/ludo/src/board.cpp:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/max_size_type.h:
 
@@ -1972,15 +3401,17 @@ CMakeFiles/ludo.dir/src/game.cpp.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/move.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/new_allocator.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/streambuf_iterator.h:
 
-/usr/include/bits/types/sigset_t.h:
+/usr/include/bits/types/cookie_io_functions_t.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ostream_insert.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/out_ptr.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/postypes.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/string_conversions.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/utility.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/predefined_ops.h:
 
 /usr/include/bits/types/locale_t.h:
 
@@ -1990,8 +3421,6 @@ CMakeFiles/ludo.dir/src/game.cpp.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/random.tcc:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/range_access.h:
-
 /lib64/libm.so.6:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ranges_algobase.h:
@@ -2000,166 +3429,12 @@ CMakeFiles/ludo.dir/src/game.cpp.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ranges_base.h:
 
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cstdarg:
+
 /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ranges_cmp.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/poly_hermite.tcc:
 
+/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/gslice.h:
+
 /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/ranges_util.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/requires_hosted.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/sstream.tcc:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/optional:
-
-/usr/lib64/libc.so:
-
-/usr/include/ctype.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_algo.h:
-
-CMakeFiles/ludo.dir/src/pawn.cpp.o:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/version.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/streambuf:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_bvector.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_function.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_heap.h:
-
-/home/tomato/pr/search_algo/ludo/include/board_printer.h:
-
-/usr/include/bits/types/time_t.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/pstl/glue_numeric_defs.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_iterator_base_types.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/concept_check.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_map.h:
-
-/usr/include/libintl.h:
-
-/usr/include/bits/endianness.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_multiset.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_vector.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/random:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/unicode-data.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_numeric.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/unicode.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/numbers:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_pair.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_set.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/crtbeginS.o:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_tree.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/new:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/string_view.tcc:
-
-/home/tomato/pr/search_algo/ludo/include/pawn.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/uniform_int_dist.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu/bits/cpu_defines.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/unordered_map.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/uses_allocator.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/uses_allocator_args.h:
-
-/usr/include/bits/mathcalls.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/sstream:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/predefined_ops.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/utility.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/string:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cassert:
-
-/usr/include/bits/setjmp.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cmath:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/concepts:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/clocale:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cstdint:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/pstl/execution_defs.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/tr1/modified_bessel_func.tcc:
-
-/usr/include/sys/types.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cstdlib:
-
-/usr/include/asm-generic/errno.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ctime:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cwchar:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/charconv:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/debug/debug.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_construct.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/exception:
-
-/usr/include/bits/pthreadtypes.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ios:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/aligned_buffer.h:
-
-/usr/include/bits/long-double.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/std_abs.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/alloc_traits.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/char_traits.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/atomicity.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/algorithmfwd.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/ext/numeric_traits.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/cwctype:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/map:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/pstl/pstl_config.h:
-
-/lib64/libc.so.6:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/bits/stl_iterator.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/set:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/stdexcept:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/string_view:

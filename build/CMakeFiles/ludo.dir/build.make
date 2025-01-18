@@ -86,10 +86,38 @@ CMakeFiles/ludo.dir/src/ai.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ludo.dir/src/ai.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tomato/pr/search_algo/ludo/src/ai.cpp -o CMakeFiles/ludo.dir/src/ai.cpp.s
 
+CMakeFiles/ludo.dir/src/board.cpp.o: CMakeFiles/ludo.dir/flags.make
+CMakeFiles/ludo.dir/src/board.cpp.o: /home/tomato/pr/search_algo/ludo/src/board.cpp
+CMakeFiles/ludo.dir/src/board.cpp.o: CMakeFiles/ludo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tomato/pr/search_algo/ludo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ludo.dir/src/board.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ludo.dir/src/board.cpp.o -MF CMakeFiles/ludo.dir/src/board.cpp.o.d -o CMakeFiles/ludo.dir/src/board.cpp.o -c /home/tomato/pr/search_algo/ludo/src/board.cpp
+
+CMakeFiles/ludo.dir/src/board.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ludo.dir/src/board.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tomato/pr/search_algo/ludo/src/board.cpp > CMakeFiles/ludo.dir/src/board.cpp.i
+
+CMakeFiles/ludo.dir/src/board.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ludo.dir/src/board.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tomato/pr/search_algo/ludo/src/board.cpp -o CMakeFiles/ludo.dir/src/board.cpp.s
+
+CMakeFiles/ludo.dir/src/drawer.cpp.o: CMakeFiles/ludo.dir/flags.make
+CMakeFiles/ludo.dir/src/drawer.cpp.o: /home/tomato/pr/search_algo/ludo/src/drawer.cpp
+CMakeFiles/ludo.dir/src/drawer.cpp.o: CMakeFiles/ludo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tomato/pr/search_algo/ludo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ludo.dir/src/drawer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ludo.dir/src/drawer.cpp.o -MF CMakeFiles/ludo.dir/src/drawer.cpp.o.d -o CMakeFiles/ludo.dir/src/drawer.cpp.o -c /home/tomato/pr/search_algo/ludo/src/drawer.cpp
+
+CMakeFiles/ludo.dir/src/drawer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ludo.dir/src/drawer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tomato/pr/search_algo/ludo/src/drawer.cpp > CMakeFiles/ludo.dir/src/drawer.cpp.i
+
+CMakeFiles/ludo.dir/src/drawer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ludo.dir/src/drawer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tomato/pr/search_algo/ludo/src/drawer.cpp -o CMakeFiles/ludo.dir/src/drawer.cpp.s
+
 CMakeFiles/ludo.dir/src/game.cpp.o: CMakeFiles/ludo.dir/flags.make
 CMakeFiles/ludo.dir/src/game.cpp.o: /home/tomato/pr/search_algo/ludo/src/game.cpp
 CMakeFiles/ludo.dir/src/game.cpp.o: CMakeFiles/ludo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tomato/pr/search_algo/ludo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ludo.dir/src/game.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tomato/pr/search_algo/ludo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ludo.dir/src/game.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ludo.dir/src/game.cpp.o -MF CMakeFiles/ludo.dir/src/game.cpp.o.d -o CMakeFiles/ludo.dir/src/game.cpp.o -c /home/tomato/pr/search_algo/ludo/src/game.cpp
 
 CMakeFiles/ludo.dir/src/game.cpp.i: cmake_force
@@ -103,7 +131,7 @@ CMakeFiles/ludo.dir/src/game.cpp.s: cmake_force
 CMakeFiles/ludo.dir/src/main.cpp.o: CMakeFiles/ludo.dir/flags.make
 CMakeFiles/ludo.dir/src/main.cpp.o: /home/tomato/pr/search_algo/ludo/src/main.cpp
 CMakeFiles/ludo.dir/src/main.cpp.o: CMakeFiles/ludo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tomato/pr/search_algo/ludo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ludo.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tomato/pr/search_algo/ludo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ludo.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ludo.dir/src/main.cpp.o -MF CMakeFiles/ludo.dir/src/main.cpp.o.d -o CMakeFiles/ludo.dir/src/main.cpp.o -c /home/tomato/pr/search_algo/ludo/src/main.cpp
 
 CMakeFiles/ludo.dir/src/main.cpp.i: cmake_force
@@ -117,7 +145,7 @@ CMakeFiles/ludo.dir/src/main.cpp.s: cmake_force
 CMakeFiles/ludo.dir/src/pawn.cpp.o: CMakeFiles/ludo.dir/flags.make
 CMakeFiles/ludo.dir/src/pawn.cpp.o: /home/tomato/pr/search_algo/ludo/src/pawn.cpp
 CMakeFiles/ludo.dir/src/pawn.cpp.o: CMakeFiles/ludo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tomato/pr/search_algo/ludo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ludo.dir/src/pawn.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tomato/pr/search_algo/ludo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ludo.dir/src/pawn.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ludo.dir/src/pawn.cpp.o -MF CMakeFiles/ludo.dir/src/pawn.cpp.o.d -o CMakeFiles/ludo.dir/src/pawn.cpp.o -c /home/tomato/pr/search_algo/ludo/src/pawn.cpp
 
 CMakeFiles/ludo.dir/src/pawn.cpp.i: cmake_force
@@ -131,7 +159,7 @@ CMakeFiles/ludo.dir/src/pawn.cpp.s: cmake_force
 CMakeFiles/ludo.dir/src/player.cpp.o: CMakeFiles/ludo.dir/flags.make
 CMakeFiles/ludo.dir/src/player.cpp.o: /home/tomato/pr/search_algo/ludo/src/player.cpp
 CMakeFiles/ludo.dir/src/player.cpp.o: CMakeFiles/ludo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tomato/pr/search_algo/ludo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ludo.dir/src/player.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tomato/pr/search_algo/ludo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ludo.dir/src/player.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ludo.dir/src/player.cpp.o -MF CMakeFiles/ludo.dir/src/player.cpp.o.d -o CMakeFiles/ludo.dir/src/player.cpp.o -c /home/tomato/pr/search_algo/ludo/src/player.cpp
 
 CMakeFiles/ludo.dir/src/player.cpp.i: cmake_force
@@ -145,7 +173,7 @@ CMakeFiles/ludo.dir/src/player.cpp.s: cmake_force
 CMakeFiles/ludo.dir/src/player_path.cpp.o: CMakeFiles/ludo.dir/flags.make
 CMakeFiles/ludo.dir/src/player_path.cpp.o: /home/tomato/pr/search_algo/ludo/src/player_path.cpp
 CMakeFiles/ludo.dir/src/player_path.cpp.o: CMakeFiles/ludo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tomato/pr/search_algo/ludo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ludo.dir/src/player_path.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tomato/pr/search_algo/ludo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ludo.dir/src/player_path.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ludo.dir/src/player_path.cpp.o -MF CMakeFiles/ludo.dir/src/player_path.cpp.o.d -o CMakeFiles/ludo.dir/src/player_path.cpp.o -c /home/tomato/pr/search_algo/ludo/src/player_path.cpp
 
 CMakeFiles/ludo.dir/src/player_path.cpp.i: cmake_force
@@ -159,6 +187,8 @@ CMakeFiles/ludo.dir/src/player_path.cpp.s: cmake_force
 # Object files for target ludo
 ludo_OBJECTS = \
 "CMakeFiles/ludo.dir/src/ai.cpp.o" \
+"CMakeFiles/ludo.dir/src/board.cpp.o" \
+"CMakeFiles/ludo.dir/src/drawer.cpp.o" \
 "CMakeFiles/ludo.dir/src/game.cpp.o" \
 "CMakeFiles/ludo.dir/src/main.cpp.o" \
 "CMakeFiles/ludo.dir/src/pawn.cpp.o" \
@@ -169,6 +199,8 @@ ludo_OBJECTS = \
 ludo_EXTERNAL_OBJECTS =
 
 ludo: CMakeFiles/ludo.dir/src/ai.cpp.o
+ludo: CMakeFiles/ludo.dir/src/board.cpp.o
+ludo: CMakeFiles/ludo.dir/src/drawer.cpp.o
 ludo: CMakeFiles/ludo.dir/src/game.cpp.o
 ludo: CMakeFiles/ludo.dir/src/main.cpp.o
 ludo: CMakeFiles/ludo.dir/src/pawn.cpp.o
@@ -180,7 +212,7 @@ ludo: /usr/lib64/libncurses.so
 ludo: /usr/lib64/libtinfo.so
 ludo: /usr/lib64/libform.so
 ludo: CMakeFiles/ludo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/tomato/pr/search_algo/ludo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable ludo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/tomato/pr/search_algo/ludo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable ludo"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ludo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

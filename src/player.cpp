@@ -1,6 +1,7 @@
 #include <board.h>
 #include <constants.h>
 #include <player.h>
+#include <player_path.h>
 
 Player::Player(PlayerColour colour, int starting_idx) : colour(colour) {
   pawns.resize(TOKEN_COUNT);
@@ -25,7 +26,7 @@ void Player::go_back_home(const int &id) {
   pawns[get_pawn_idx(id)].go_back_home();
 }
 
-bool Player::is_winner() {
+bool Player::is_winner() const {
   for (auto &pawn : pawns) {
     if (!pawn.has_reached_destination()) {
       return false;

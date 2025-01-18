@@ -3,6 +3,8 @@ ludo: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64/crti.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14/crtbeginS.o \
   CMakeFiles/ludo.dir/src/ai.cpp.o \
+  CMakeFiles/ludo.dir/src/board.cpp.o \
+  CMakeFiles/ludo.dir/src/drawer.cpp.o \
   CMakeFiles/ludo.dir/src/game.cpp.o \
   CMakeFiles/ludo.dir/src/main.cpp.o \
   CMakeFiles/ludo.dir/src/pawn.cpp.o \
@@ -46,6 +48,10 @@ ludo: \
 /usr/lib/gcc/x86_64-pc-linux-gnu/14/crtbeginS.o:
 
 CMakeFiles/ludo.dir/src/ai.cpp.o:
+
+CMakeFiles/ludo.dir/src/board.cpp.o:
+
+CMakeFiles/ludo.dir/src/drawer.cpp.o:
 
 CMakeFiles/ludo.dir/src/game.cpp.o:
 

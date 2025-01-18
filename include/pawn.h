@@ -15,10 +15,15 @@ struct Pawn {
 
   void go_back_home();
 
-  bool is_at_home();
+  bool is_at_home() const;
 
-  bool has_reached_destination();
+  bool has_reached_destination() const;
 
+  bool is_protected() const;
+
+  char to_char();
+
+  // returns the pawn coordinates in the grid
   std::pair<int, int> get_coordinates();
 
   int id; // current position ranging from [-1, 57[

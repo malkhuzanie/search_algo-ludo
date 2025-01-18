@@ -85,12 +85,12 @@ clean: CMakeFiles/ludo.dir/clean
 CMakeFiles/ludo.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ludo.dir/build.make CMakeFiles/ludo.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ludo.dir/build.make CMakeFiles/ludo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/tomato/pr/search_algo/ludo/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target ludo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/tomato/pr/search_algo/ludo/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target ludo"
 .PHONY : CMakeFiles/ludo.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ludo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tomato/pr/search_algo/ludo/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tomato/pr/search_algo/ludo/build/CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ludo.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tomato/pr/search_algo/ludo/build/CMakeFiles 0
 .PHONY : CMakeFiles/ludo.dir/rule

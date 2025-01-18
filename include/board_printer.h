@@ -79,11 +79,19 @@ const std::unordered_map<char, const char *> LudoBoardPrinter<Rows>::colorMap =
         {'Y', "\033[33m"}, // Yellow
         {'y', "\033[33m"}, // Yellow
         {'0', "\033[31m"}, // Red home
-        {'1', "\033[31m"}, // Blue home
-        {'2', "\033[31m"}, // Green home
-        {'3', "\033[31m"}, // Yellow home
-        {'4', "\033[33m"}, // Red home
-        {'5', "\033[33m"}, // Blue home
-        {'6', "\033[33m"}, // Green home
+        {'1', "\033[31m"}, // Red home
+        {'2', "\033[31m"}, // Red home
+        {'3', "\033[31m"}, // Red home
+        {'4', "\033[33m"}, // Yellow home
+        {'5', "\033[33m"}, // Yellow home
+        {'6', "\033[33m"}, // Yellow home
         {'7', "\033[33m"}, // Yellow home
+        {'8', "\033[34m"}, // Blue home
+        {'9', "\033[34m"}, // Blue home
+        {'H', "\033[34m"}, // Blue home
+        {'I', "\033[34m"}, // Blue home
+        {'J', "\033[32m"}, // Green home
+        {'K', "\033[32m"}, // Green home
+        {'L', "\033[32m"}, // Green home
+        {'M', "\033[32m"}, // Green home
 };
