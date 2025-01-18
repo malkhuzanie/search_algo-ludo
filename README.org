@@ -1,0 +1,17 @@
+* General Information
+
+* Building the project
+
+#+begin_src bash
+  mkdir build; cd build
+  cmake ../
+  make
+#+end_src
+
+To run the game, execute "ludo" binary
+
+#+begin_src bash
+  ./ludo
+#+end_src
+
+
