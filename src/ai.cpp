@@ -2,7 +2,6 @@
 #include <game.h>
 #include <limits>
 #include <memory>
-#include <node.h>
 #include <vector>
 
 using namespace std;
