@@ -49,7 +49,7 @@ struct Board {
   void move_current_player(const unsigned int &id, int steps);
 
   // get current player pawns the can be moved with the specified steps
-  // here steps represents the face value of the rolled dice
+  // where steps represents the face value of the rolled dice
   vector<int> get_all_pawns(const int &steps);
 
   // return true if the game has ended "there is a winner"

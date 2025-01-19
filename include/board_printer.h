@@ -5,14 +5,16 @@
 #include <unordered_map>
 #include <utils.h>
 
+using namespace std;
+
 template <size_t Rows> class LudoBoardPrinter {
 private:
   static constexpr const char *RESET = "\033[0m";
-  static const std::unordered_map<char, const char *> colorMap;
+  static const unordered_map<char, const char *> colour_map;
 
-  static void printHorizontalBorder(size_t width) {
-    std::cout << string((terminal_width() - 35) >> 1, ' ');
-    std::cout << "   +" << std::string(width * 2 - 1, '-') << "+\n";
+  static void print_horizontal_border(size_t width) {
+    cout << string((terminal_width() - 35) >> 1, ' ');
+    cout << "   +" << string(width * 2 - 1, '-') << "+\n";
   }
 
 public:
@@ -24,32 +26,29 @@ public:
     return c == 'r' || c == 'g' || c == 'y' || c == 'b';
   }
 
-  static void print(const std::array<std::string, Rows> &grid) {
+  static void print(const array<string, Rows> &grid) {
     if (grid.empty())
       return;
 
     const size_t width = grid[0].length();
 
-    // Print column numbers with spacing
-    std::cout << string((terminal_width() - 35) >> 1, ' ');
-    std::cout << "    ";
+    cout << string((terminal_width() - 35) >> 1, ' ');
+    cout << "    ";
     for (size_t i = 0; i < width; ++i) {
-      std::cout << i % 10 << " "; // Add space after each number
+      cout << i % 10 << " ";
     }
-    std::cout << "\n";
+    cout << "\n";
 
-    printHorizontalBorder(width);
+    print_horizontal_border(width);
 
-    // Print rows with row numbers
     for (size_t i = 0; i < grid.size(); ++i) {
-      std::cout << string((terminal_width() - 35) >> 1, ' ');
-      std::cout << std::setw(2) << i << " |";
+      cout << string((terminal_width() - 35) >> 1, ' ');
+      cout << setw(2) << i << " |";
 
-      // Print each cell with appropriate color and spacing
       for (char c : grid[i]) {
-        auto colorIt = colorMap.find(c);
-        if (colorIt != colorMap.end()) {
-          std::cout << colorIt->second;
+        auto colour_it = colour_map.find(c);
+        if (colour_it != colour_map.end()) {
+          cout << colour_it->second;
           char to_print;
           if (is_border(c)) {
             to_print = '-';
@@ -60,42 +59,41 @@ public:
           }
           cout << to_print << RESET << " ";
         } else {
-          std::cout << c << " ";
+          cout << c << " ";
         }
       }
 
-      std::cout << "\b|" << "\n"; // Remove the last space before closing border
+      cout << "\b|" << "\n";
     }
 
-    printHorizontalBorder(width);
+    print_horizontal_border(width);
   }
 };
 
 template <size_t Rows>
-const std::unordered_map<char, const char *> LudoBoardPrinter<Rows>::colorMap =
-    {
-        {'R', "\033[31m"}, // Red
-        {'r', "\033[31m"}, // Red
-        {'G', "\033[32m"}, // Green
-        {'g', "\033[32m"}, // Green
-        {'B', "\033[34m"}, // Blue
-        {'b', "\033[34m"}, // Blue
-        {'Y', "\033[33m"}, // Yellow
-        {'y', "\033[33m"}, // Yellow
-        {'0', "\033[31m"}, // Red home
-        {'1', "\033[31m"}, // Red home
-        {'2', "\033[31m"}, // Red home
-        {'3', "\033[31m"}, // Red home
-        {'4', "\033[33m"}, // Yellow home
-        {'5', "\033[33m"}, // Yellow home
-        {'6', "\033[33m"}, // Yellow home
-        {'7', "\033[33m"}, // Yellow home
-        {'8', "\033[34m"}, // Blue home
-        {'9', "\033[34m"}, // Blue home
-        {'H', "\033[34m"}, // Blue home
-        {'I', "\033[34m"}, // Blue home
-        {'J', "\033[32m"}, // Green home
-        {'K', "\033[32m"}, // Green home
-        {'L', "\033[32m"}, // Green home
-        {'M', "\033[32m"}, // Green home
+const unordered_map<char, const char *> LudoBoardPrinter<Rows>::colour_map = {
+    {'R', "\033[31m"}, // Red
+    {'r', "\033[31m"}, // Red
+    {'G', "\033[32m"}, // Green
+    {'g', "\033[32m"}, // Green
+    {'B', "\033[34m"}, // Blue
+    {'b', "\033[34m"}, // Blue
+    {'Y', "\033[33m"}, // Yellow
+    {'y', "\033[33m"}, // Yellow
+    {'0', "\033[31m"}, // Red home
+    {'1', "\033[31m"}, // Red home
+    {'2', "\033[31m"}, // Red home
+    {'3', "\033[31m"}, // Red home
+    {'4', "\033[33m"}, // Yellow home
+    {'5', "\033[33m"}, // Yellow home
+    {'6', "\033[33m"}, // Yellow home
+    {'7', "\033[33m"}, // Yellow home
+    {'8', "\033[34m"}, // Blue home
+    {'9', "\033[34m"}, // Blue home
+    {'H', "\033[34m"}, // Blue home
+    {'I', "\033[34m"}, // Blue home
+    {'J', "\033[32m"}, // Green home
+    {'K', "\033[32m"}, // Green home
+    {'L', "\033[32m"}, // Green home
+    {'M', "\033[32m"}, // Green home
 };

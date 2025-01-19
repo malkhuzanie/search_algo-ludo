@@ -63,7 +63,6 @@ struct LudoAI {
       _path[MAX_DEPTH - depth] = next_move;
       return best_score;
     } else {
-      // Chance node (dice roll)
       double expected_score = 0.0;
       for (int steps = 1; steps <= 6; ++steps) {
         auto pawns = game.get_all_pawns(steps);

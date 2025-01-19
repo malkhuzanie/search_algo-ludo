@@ -82,7 +82,7 @@ bool Board::move_current(const unsigned int &id, int steps) {
   }
   auto wall = next_wall(current_player().colour, pawn.pos, steps);
   if (wall.has_value()) {
-    steps = *wall - pawn.pos - 1;
+    steps = 0;
   }
   current_player().move(id, steps);
   return check_clash(current_player().get_pawn(id));
