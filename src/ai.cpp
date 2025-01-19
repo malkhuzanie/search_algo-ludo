@@ -11,6 +11,7 @@ namespace ai {
 constexpr int MAX_DEPTH = 3;
 constexpr double WINNING_SCORE = 1000.0;
 constexpr double LOSING_SCORE = -1000.0;
+constexpr double BLOCKING_BONUS = 40;
 constexpr double PROBABILITY = 1.0 / 6.0; // dice face probability
 
 struct LudoAI {
@@ -26,12 +27,12 @@ struct LudoAI {
     const auto &current_player = game.board.current_player();
 
     for (const auto &pawn : current_player.pawns) {
-      if (pawn.has_reached_destination()) {
-        score += 100.0;
-      } else if (!pawn.is_at_home()) {
+      if (!pawn.is_at_home()) {
         score += pawn.pos * 2.0;
       }
+      score += pawn.has_reached_destination() * 100;
       score += pawn.is_protected() * 10;
+      score += evaluate_blocking(game, pawn);
     }
 
     return score;
@@ -86,6 +87,31 @@ struct LudoAI {
       _path[MAX_DEPTH - depth] = next_move;
       return expected_score;
     }
+  }
+
+  // returns an extra score if the player move blocks one or more
+  // of opponent pawns
+  double evaluate_blocking(const Game &game, const Pawn &pawn) {
+    double blocking_score = 0.0;
+    auto [x, y] = game.board.get_pawn_coordinates(pawn.colour, pawn.pos);
+
+    for (const auto &player : game.board.players) {
+      if (player.colour == game.current_player_colour()) {
+        continue;
+      }
+
+      for (const auto &op_pawn : player.pawns) {
+        if (op_pawn.is_at_home() || op_pawn.has_reached_destination()) {
+          continue;
+        }
+
+        if (pawn.pos - op_pawn.pos <= 6) {
+          blocking_score += BLOCKING_BONUS;
+        }
+      }
+    }
+
+    return blocking_score;
   }
 
   int choose_pawn(Game &game, const int &steps) {
