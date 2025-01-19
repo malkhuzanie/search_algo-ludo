@@ -1,1 +1,0 @@
-/usr/bin/c++ -g -Wl,--dependency-file,CMakeFiles/magnets.dir/link.d CMakeFiles/magnets.dir/main.cpp.o -o magnets  /usr/lib64/libncurses.so /usr/lib64/libtinfo.so /usr/lib64/libform.so

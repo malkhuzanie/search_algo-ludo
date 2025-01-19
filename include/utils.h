@@ -18,7 +18,6 @@ inline void get_terminal_size(int &width, int &height) {
 #elif defined(__linux__)
   struct winsize w;
   ioctl(fileno(stdout), TIOCGWINSZ, &w);
-  std::cout << "width: " << width << '\n';
   width = (int)(w.ws_col);
   height = (int)(w.ws_row);
 #endif // Windows/Linux
@@ -26,7 +25,7 @@ inline void get_terminal_size(int &width, int &height) {
 
 inline void print_centered(const std::string &text) {
   int rows, cols;
-  get_terminal_size(rows, cols);
+  get_terminal_size(cols, rows);
 
   // Calculate position
   int x = (cols - text.length()) / 2; // Center horizontally
@@ -37,12 +36,31 @@ inline void print_centered(const std::string &text) {
   //   std::cout << std::endl; // Move to vertical center
 
   // Print spaces for horizontal centering
-  std::cout << "hello " << cols << '\n';
   std::cout << std::string(x, ' ') << text << std::endl;
+}
+
+inline std::string center(const std::string &s) {
+  int rows, cols;
+  get_terminal_size(cols, rows);
+  return std::format("{:^{}}", s, cols);
 }
 
 inline std::string center(const std::string &s, size_t width) {
   return std::format("{:^{}}", s, width);
+}
+
+inline int terminal_width() {
+  int rows, cols;
+  get_terminal_size(cols, rows);
+  return cols;
+}
+
+inline string dotted_line(const string &text) { return "⚫" + text; }
+
+inline int get_padding(const std::string &s) {
+  int rows, cols;
+  get_terminal_size(cols, rows);
+  return (cols - s.size()) >> 1;
 }
 
 inline string get_sep(const char &ch, const int &len) {

@@ -3,6 +3,7 @@
 #include <iostream>
 #include <string>
 #include <unordered_map>
+#include <utils.h>
 
 template <size_t Rows> class LudoBoardPrinter {
 private:
@@ -10,6 +11,7 @@ private:
   static const std::unordered_map<char, const char *> colorMap;
 
   static void printHorizontalBorder(size_t width) {
+    std::cout << string((terminal_width() - 35) >> 1, ' ');
     std::cout << "   +" << std::string(width * 2 - 1, '-') << "+\n";
   }
 
@@ -29,7 +31,8 @@ public:
     const size_t width = grid[0].length();
 
     // Print column numbers with spacing
-    std::cout << "     ";
+    std::cout << string((terminal_width() - 35) >> 1, ' ');
+    std::cout << "    ";
     for (size_t i = 0; i < width; ++i) {
       std::cout << i % 10 << " "; // Add space after each number
     }
@@ -39,6 +42,7 @@ public:
 
     // Print rows with row numbers
     for (size_t i = 0; i < grid.size(); ++i) {
+      std::cout << string((terminal_width() - 35) >> 1, ' ');
       std::cout << std::setw(2) << i << " |";
 
       // Print each cell with appropriate color and spacing

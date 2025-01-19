@@ -153,14 +153,19 @@ void print_path(vector<ai::Move> &path) {
   for (auto &move : path) {
     auto colour = Board::get_pawn_colour(move.pawn_id);
     auto name = get_name(colour);
-    cout << get_colour(colour) << setw(6) << "-> " << name << " "
-         << "moved pawn" << get_sep('.', MAX_NAME_WIDTH - name.size() + 2)
-         << pawn_symbol(move.pawn_id) << ", " << move.steps
-         << " steps forward, gaining a score = " << move.score << '\n'
-         << RESET;
-    // << format(" moved pawn: {}, {} steps forward, gaining a score =
-    // {}\n",
-    //           pawn_symbol(move.pawn_id), move.steps, move.score)
+    // cout << get_colour(colour) << setw(6) << "-> " << name << " "
+    //      << "moved pawn" << get_sep('.', MAX_NAME_WIDTH - name.size() + 2)
+    //      << pawn_symbol(move.pawn_id) << ", " << move.steps
+    //      << " steps forward, gaining a score = " << move.score << '\n'
+    //      << RESET;
+    auto sep = get_sep('.', MAX_NAME_WIDTH - name.size() + 2);
+    cout << center(format("{}{:>6} -> {} moved pawn{}{}, {} steps forward, "
+                          "gaining a score = "
+                          "{:.7f}{}",
+                          get_colour(colour), "", name, sep,
+                          pawn_symbol(move.pawn_id), move.steps, move.score,
+                          RESET))
+         << '\n';
   }
 }
 

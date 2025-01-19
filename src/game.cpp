@@ -3,6 +3,7 @@
 #include <drawer.h>
 #include <format>
 #include <game.h>
+#include <utils.h>
 
 void Game::print() {
   LudoBoardPrinter<15>::print(board.current_state());
@@ -36,14 +37,17 @@ vector<int> Game::get_all_pawns(const int &steps) {
   return board.get_all_pawns(steps);
 }
 
-void Game::print_choices(const vector<int> &pawns) {
+string Game::get_choices(const vector<int> &pawns) {
+  string choices = "[";
   for (int i = 0; i < pawns.size(); ++i) {
     if (i < pawns.size() - 1) {
-      cout << format("{}, ", pawns[i]);
+      choices += to_string(pawns[i]);
+      choices += ", ";
       continue;
     }
-    cout << format("{}", pawns[i]);
+    choices += to_string(pawns[i]);
   }
+  return choices += "]";
 }
 
 bool pawn_exists(vector<int> &indices, const int &id) {
@@ -59,17 +63,20 @@ void Game::move(int steps) {
   int id = -1;
   auto pawns = board.get_all_pawns(steps);
   if (pawns.empty()) {
-    cout << dot << "None of the pawns can be moved, Sorry\n";
+    cout << center(dotted_line("Skipping, None of the pawns can be moved"))
+         << '\n';
     return;
   }
   switch (board._current_player) {
   case 0: {
-    cout << dot << "Choose a piece to move [";
-    print_choices(pawns);
-    cout << "]: ";
+    cout << center(
+        dotted_line(format("Choose a piece to move {}:", get_choices(pawns))));
+    cout << string(get_padding(""), ' ');
     cin >> id;
+    cout << '\n';
     while (!pawn_exists(pawns, id)) {
-      cout << dot << "Invalid pawn number, Please try again.\n";
+      cout << center(dotted_line("Invalid pawn number, Please try again."))
+           << '\n';
       cin >> id;
     }
     break;
@@ -77,8 +84,10 @@ void Game::move(int steps) {
   default:
     vector<ai::Move> path;
     id = ai::choose_pawn(*this, steps, path);
-    cout << dot << "Chosen pawn id: " << drawer::pawn_symbol(id) << '\n';
-    cout << dot << "Expectiminmax path is:\n";
+    cout << center(dotted_line(
+                format("Chosen pawn id: {}", drawer::pawn_symbol(id))))
+         << '\n';
+    cout << center(dotted_line("Expectiminmax path is:")) << '\n';
     drawer::print_path(path);
   }
   board.move_current_player(id, steps);

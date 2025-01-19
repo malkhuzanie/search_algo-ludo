@@ -38,6 +38,8 @@ struct Board {
 
   // search for a wall in range [pos + 1, pos + steps], return nullopt
   // if no wall is found
+  // a wall exists if 2 pawns are placed on the same cell, or if a cell
+  // contains a pawn in the player's protected area.
   optional<int> next_wall(PlayerColour colour, const int &pos,
                           const int &steps);
 

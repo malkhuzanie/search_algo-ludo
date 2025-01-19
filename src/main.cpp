@@ -2,6 +2,7 @@
 #include <drawer.h>
 #include <fstream>
 #include <game.h>
+#include <intro.h>
 #include <iomanip>
 #include <pawn.h>
 #include <thread>
@@ -11,88 +12,33 @@ using namespace std;
 
 const int WIDTH = 140;
 
-void print_intro() {
-// Clear screen in a cross-platform way
-#ifdef _WIN32
-  system("cls");
-#else
-  system("clear");
-#endif
-
-  auto type_text = [](const string &text, int delay_ms = 20) {
-    for (char c : text) {
-      cout << c << flush;
-      this_thread::sleep_for(chrono::milliseconds(delay_ms));
-    }
-    cout << "\n";
-  };
-
-  cout << "\n\n+" << string(WIDTH - 2, '-') << "+\n";
-
-  fstream f{"../intro"};
-  if (f.is_open()) {
-    cout << f.rdbuf();
-  }
-
-  cout << string(WIDTH, '=') << "\n\n";
-
-  type_text("                           Welcome to the Classic Board Game of "
-            "Strategy");
-  cout << "\n";
-
-  cout << R"(
-    +-------------------------------- PLAYERS ----------------------------------+
-    |                                                                           |
-    |     [R]ed        [B]lue        [G]reen        [Y]ellow                    |
-    |     Home: *      Home: *      Home: *       Home: *                       |
-    |                                                                           |
-    +---------------------------------------------------------------------------+
-)" << endl;
-
-  cout << R"(
-    +------------------------------- GAME RULES -------------------------------+
-    |                                                                          |
-    |          * Roll a 6 to release pawns from your home                      |
-    |          * Move your pawns clockwise around the board                    |
-    |          * Capture opponent's pawns by landing on their space            |
-    |          * Get all four pawns to the center to win                       |
-    |                                                                          |
-    +--------------------------------------------------------------------------+
-)" << endl;
-
-  // Press Enter prompt with simple animation
-  for (int i = 0; i < 3; i++) {
-    cout << "\r                        Press Enter to Begin Your Journey..."
-         << flush;
-    this_thread::sleep_for(chrono::milliseconds(500));
-    cout << "\r                        >>>> Press Enter to Begin <<<<    "
-         << flush;
-    this_thread::sleep_for(chrono::milliseconds(500));
-  }
-  cout << '\n';
-
-  cin.get();
+inline string player_name(const Game &game) {
+  return game.current_player_name();
 }
 
 int main() {
-  map<char, string> colour = {
-      {'R', "Red"}, {'B', "Blue"}, {'G', "Green"}, {'Y', "Yellow"}};
-
+  // game intro
   print_intro();
-  cout << "Choose the number of players [1..4]\n";
+
+  cout << center("Choose the number of players [1..4]\n");
   int players_count = 2;
   cin >> players_count;
-  cout << "----------------------> Start <-------------------\n";
+
   auto game = Game(players_count);
+  cout << center(string(terminal_width() >> 1, '-')) << '\n';
   while (!game.ended()) {
     int steps = game.roll_dice();
-    cout << drawer::get_colour(game.current_player_colour()) << dot
-         << format("{} player turn.\n", game.current_player_name());
 
-    cout << dot << format("Dice face value: {}\n", steps);
+    cout << drawer::get_colour(game.current_player_colour())
+         << center(format("{} {} player turn.", dot, player_name(game)))
+         << '\n';
+    cout << center(format("{} Dice face value: {}", dot, steps)) << '\n';
+
     game.move(steps);
-    print_sep('-', 70);
-    cout << drawer::RESET;
+
+    cout << center(string(terminal_width() >> 1, '-')) << drawer::RESET << '\n';
+
+    // print current game state
     game.print();
   }
   return 0;

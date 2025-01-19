@@ -13,7 +13,7 @@ Board::Board(int players_count) : players_count(players_count) {
 
 pair<int, int> Board::get_pawn_coordinates(const PlayerColour &colour,
                                            const unsigned int &pos) const {
-  return player_path::get_path(colour)[pos];
+  return player_path::get_path(colour)[min<int>(pos, Pawn::DEST)];
 }
 
 optional<Pawn *> Board::get_pawn_at_coordinates(Player &player,
@@ -65,6 +65,7 @@ optional<int> Board::next_wall(PlayerColour colour, const int &pos,
           continue;
         }
         count += (pawn.get_coordinates() == cor);
+        count += 2 * (pawn.is_protected());
       }
       if (count >= 2) {
         return pos + 1;

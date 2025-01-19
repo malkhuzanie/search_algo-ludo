@@ -26,7 +26,7 @@ struct Game {
 
   vector<int> get_all_pawns(const int &steps);
 
-  void print_choices(const vector<int> &pawns);
+  string get_choices(const vector<int> &pawns);
 
   void move(int steps);
 
