@@ -1,6 +1,8 @@
 #ifndef PAWN_H
 #define PAWN_H
 
+#include <utility>
+
 enum class PlayerColour;
 
 struct Pawn {
