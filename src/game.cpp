@@ -26,7 +26,7 @@ string Game::current_player_name() const {
   case PlayerColour::GREEN:
     return "Green";
   case PlayerColour::YELLOW:
-    return "Yello";
+    return "Yellow";
   case PlayerColour::BLUE:
     return "Blue";
   }
@@ -83,6 +83,7 @@ void Game::move(int steps) {
   }
   default:
     vector<ai::Move> path;
+    cout << center("Thinking...") << '\n';
     id = ai::choose_pawn(*this, steps, path);
     cout << center(dotted_line(
                 format("Chosen pawn id: {}", drawer::pawn_symbol(id))))

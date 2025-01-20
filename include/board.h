@@ -48,6 +48,8 @@ struct Board {
   // move the current player steps = steps forward
   void move_current_player(const unsigned int &id, int steps);
 
+  vector<int> get_all_pawns();
+
   // get current player pawns the can be moved with the specified steps
   // where steps represents the face value of the rolled dice
   vector<int> get_all_pawns(const int &steps);

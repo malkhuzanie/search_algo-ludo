@@ -38,8 +38,18 @@ int main() {
 
     cout << center(string(terminal_width() >> 1, '-')) << drawer::RESET << '\n';
 
-    // print current game state
     game.print();
   }
+
+  cout << drawer::RESET;
+
+  auto winner = game.winner();
+  cout << drawer::get_colour(winner.colour);
+  cout << center(string(terminal_width(), '-')) << '\n';
+  cout << center(format("-----> {} player is the winner. <-----",
+                        drawer::get_name(winner.colour)))
+       << '\n';
+  cout << center(string(terminal_width(), '-')) << drawer::RESET << '\n';
+
   return 0;
 }

@@ -53,8 +53,9 @@ const Player &Board::current_player() const { return players[_current_player]; }
 
 optional<int> Board::next_wall(PlayerColour colour, const int &pos,
                                const int &steps) {
-  pair<int, int> cor = player_path::get_path(colour)[pos];
-  for (int i = pos + 1; i <= pos + steps; ++i) {
+  auto destination_cor = player_path::get_path(colour)[pos + steps];
+  for (int i = pos + 1; i <= min(pos + steps, Pawn::DEST); ++i) {
+    pair<int, int> cor = player_path::get_path(colour)[i];
     for (auto &player : players) {
       if (player.colour == colour) {
         continue;
@@ -65,10 +66,12 @@ optional<int> Board::next_wall(PlayerColour colour, const int &pos,
           continue;
         }
         count += (pawn.get_coordinates() == cor);
-        count += 2 * (pawn.is_protected());
+        if (pawn.is_protected() && pawn.get_coordinates() == destination_cor) {
+          count += 2;
+        }
       }
       if (count >= 2) {
-        return pos + 1;
+        return i;
       }
     }
   }
@@ -79,10 +82,6 @@ bool Board::move_current(const unsigned int &id, int steps) {
   auto pawn = current_player().get_pawn(id);
   if (steps == 6 && pawn.is_at_home()) {
     steps = 1;
-  }
-  auto wall = next_wall(current_player().colour, pawn.pos, steps);
-  if (wall.has_value()) {
-    steps = 0;
   }
   current_player().move(id, steps);
   return check_clash(current_player().get_pawn(id));
@@ -102,10 +101,27 @@ void Board::move_current_player(const unsigned int &id, int steps) {
   set_next_player();
 }
 
+vector<int> Board::get_all_pawns() {
+  vector<int> pawns;
+  for (auto &pawn : current_player().pawns) {
+    pawns.emplace_back(pawn.pos);
+  }
+  return pawns;
+}
+
 vector<int> Board::get_all_pawns(const int &steps) {
   vector<int> pawns;
   for (auto &pawn : current_player().pawns) {
     if (steps != 6 && pawn.is_at_home()) {
+      continue;
+    }
+    if (pawn.pos + steps > Pawn::DEST) {
+      continue;
+    }
+    // remove all pawns that cannot be moved because of a wall exists
+    // between range [pawn.pos, steps]
+    auto wall = next_wall(current_player().colour, pawn.pos, steps);
+    if (wall.has_value()) {
       continue;
     }
     if (!pawn.has_reached_destination()) {

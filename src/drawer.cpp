@@ -161,7 +161,7 @@ void print_path(vector<ai::Move> &path) {
     auto sep = get_sep('.', MAX_NAME_WIDTH - name.size() + 2);
     cout << center(format("{}{:>6} -> {} moved pawn{}{}, {} steps forward, "
                           "gaining a score = "
-                          "{:.7f}{}",
+                          "{:14.7f}{}",
                           get_colour(colour), "", name, sep,
                           pawn_symbol(move.pawn_id), move.steps, move.score,
                           RESET))
