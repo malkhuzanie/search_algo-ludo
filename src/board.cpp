@@ -54,7 +54,7 @@ const Player &Board::current_player() const { return players[_current_player]; }
 optional<int> Board::next_wall(PlayerColour colour, const int &pos,
                                const int &steps) {
   auto destination_cor = player_path::get_path(colour)[pos + steps];
-  for (int i = pos + 1; i <= min(pos + steps, Pawn::DEST); ++i) {
+  for (int i = pos + 1; i <= min(pos + steps - 1, Pawn::DEST); ++i) {
     pair<int, int> cor = player_path::get_path(colour)[i];
     for (auto &player : players) {
       if (player.colour == colour) {
@@ -78,10 +78,32 @@ optional<int> Board::next_wall(PlayerColour colour, const int &pos,
   return nullopt;
 }
 
+bool Board::will_land_on_block(const Pawn &pawn, int steps) {
+  auto colour = pawn.colour;
+  pair<int, int> cor = player_path::get_path(colour)[pawn.pos + steps];
+  for (auto &player : players) {
+    if (player.colour == colour) {
+      continue;
+    }
+    int count = 0;
+    for (auto &p : player.pawns) {
+      count += (p.get_coordinates() == cor);
+    }
+    if (count >= 2) {
+      return true;
+    }
+  }
+  return false;
+}
+
 bool Board::move_current(const unsigned int &id, int steps) {
   auto pawn = current_player().get_pawn(id);
   if (steps == 6 && pawn.is_at_home()) {
     steps = 1;
+  }
+  if (will_land_on_block(pawn, steps)) {
+    pawn.go_back_home();
+    return false;
   }
   current_player().move(id, steps);
   return check_clash(current_player().get_pawn(id));

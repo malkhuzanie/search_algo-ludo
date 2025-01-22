@@ -43,6 +43,8 @@ struct Board {
   optional<int> next_wall(PlayerColour colour, const int &pos,
                           const int &steps);
 
+  bool will_land_on_block(const Pawn &pawn, int steps);
+
   bool move_current(const unsigned int &id, int steps);
 
   // move the current player steps = steps forward
