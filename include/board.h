@@ -61,9 +61,6 @@ struct Board {
 
   string to_string();
 
-  // returns the home coordinates of the players pawn in the grid
-  pair<int, int> get_pawn_home(PlayerColour colour);
-
   // returns a string representation of the current game state
   array<string, rows> current_state();
 

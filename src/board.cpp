@@ -155,22 +155,16 @@ string Board::to_string() {
   return res;
 }
 
-pair<int, int> Board::get_pawn_home(PlayerColour colour) {
-  auto &home = tokens[colour];
-  auto home_pos = home.front();
-  rotate(home.begin(), home.begin() + 1, home.end());
-  return home_pos;
-}
-
 array<string, rows> Board::current_state() {
   auto state = grid;
   for (auto &player : players) {
+    unsigned int home_idx = 0;
     for (auto &pawn : player.pawns) {
       if (pawn.has_reached_destination()) {
         continue;
       }
       if (pawn.is_at_home()) {
-        auto [x, y] = get_pawn_home(pawn.colour);
+        auto [x, y] = tokens[pawn.colour][home_idx++];
         state[x][y] = pawn.to_char();
       } else {
         auto [x, y] = get_pawn_coordinates(pawn.colour, pawn.pos);
