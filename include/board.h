@@ -1,6 +1,7 @@
 #ifndef BOARD_H
 #define BOARD_H
 
+#include <array>
 #include <grid.h>
 #include <iostream>
 #include <map>
