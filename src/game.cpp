@@ -1,6 +1,7 @@
 #include <ai.h>
 #include <board_printer.h>
 #include <drawer.h>
+#include <expectiminmax.h>
 #include <format>
 #include <game.h>
 #include <utils.h>
@@ -84,7 +85,8 @@ void Game::move(int steps) {
   default:
     vector<ai::Move> path;
     cout << center("Thinking...") << '\n';
-    id = ai::choose_pawn(*this, steps, path);
+    // id = ai::choose_pawn(*this, steps, path);
+    id = algo::choose_pawn(*this, steps, path);
     cout << center(dotted_line(
                 format("Chosen pawn id: {}", drawer::pawn_symbol(id))))
          << '\n';
@@ -107,6 +109,8 @@ unsigned int Game::players_count() { return board.players_count; }
 unsigned int Game::next_player_id() {
   return (board._current_player + 1) % players_count();
 }
+
+unsigned int Game::current_player_idx() { return board._current_player; }
 
 unsigned int Game::next_player_id(const int &current) {
   return (current + 1) % players_count();

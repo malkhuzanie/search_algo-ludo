@@ -1,4 +1,5 @@
 #include <board.h>
+#include <cassert>
 #include <constants.h>
 #include <iostream>
 #include <player_path.h>
@@ -195,6 +196,11 @@ array<string, rows> Board::current_state() {
     }
   }
   return state;
+}
+
+const Player &Board::get_player(const unsigned int &idx) const {
+  assert(idx < players.size());
+  return players[idx];
 }
 
 PlayerColour Board::get_pawn_colour(const int &id) {

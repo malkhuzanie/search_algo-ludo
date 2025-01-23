@@ -36,6 +36,8 @@ struct Game {
 
   unsigned int players_count();
 
+  unsigned int current_player_idx();
+
   unsigned int next_player_id();
 
   // returns the next player id if the current player

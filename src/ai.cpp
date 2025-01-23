@@ -15,6 +15,10 @@ constexpr double BLOCKING_BONUS = 40;
 constexpr double PROBABILITY = 1.0 / 6.0;
 
 struct LudoAI {
+  LudoAI(int players_count) : players_count(players_count) {
+    scores = vector<double>(players_count);
+  }
+
   enum class NodeType { MAX, MIN, CHANCE };
 
   // returns an extra score if the player move blocks one or more
@@ -121,10 +125,13 @@ struct LudoAI {
   }
 
   vector<Move> path = vector<Move>(MAX_DEPTH);
+  vector<double> scores;
+
+  int players_count;
 };
 
 int choose_pawn(Game &game, const int &steps, vector<Move> &path) {
-  static LudoAI ai;
+  static LudoAI ai(game.players_count());
   ai.expectiminmax(game, MAX_DEPTH, 0, steps);
   path = ai.path;
   reverse(path.begin(), path.end());
