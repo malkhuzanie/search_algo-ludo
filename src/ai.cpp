@@ -27,18 +27,15 @@ struct LudoAI {
       if (player.colour == game.current_player_colour()) {
         continue;
       }
-
       for (const auto &op_pawn : player.pawns) {
         if (op_pawn.is_at_home() || op_pawn.has_reached_destination()) {
           continue;
         }
-
         if (pawn.pos - op_pawn.pos <= 6) {
           blocking_score += BLOCKING_BONUS;
         }
       }
     }
-
     return blocking_score;
   }
 
@@ -66,23 +63,22 @@ struct LudoAI {
   }
 
   // take out all possible player moves.
-  vector<Move> take_moves(Game &game, int depth, int type_idx,
-                          const int &steps) {
+  vector<Move> take_moves(Game &game, int depth, int type, const int &steps) {
     vector<Move> issued_moves;
     for (int pawn_id : game.get_all_pawns(steps)) {
       auto next_state = game.clone();
       next_state->move_current_player(pawn_id, steps);
-      type_idx = (type_idx + 1) % 4;
-      double alpha = expectiminmax(*next_state, depth - 1, type_idx, steps);
+      type = (type + 1) % 4;
+      double alpha = expectiminmax(*next_state, depth - 1, type, steps);
       issued_moves.emplace_back(pawn_id, steps, alpha);
     }
     return issued_moves;
   }
 
-  double expectiminmax_player(Game &game, int depth, int type_idx,
+  double expectiminmax_player(Game &game, int depth, int type,
                               const int &steps) {
     double alpha = numeric_limits<double>::max();
-    auto issued_moves = take_moves(game, depth, type_idx, steps);
+    auto issued_moves = take_moves(game, depth, type, steps);
     Move next_move;
     for (auto &[pawn_id, steps, score] : issued_moves) {
       alpha = min(alpha, score);
@@ -92,10 +88,9 @@ struct LudoAI {
     return alpha;
   }
 
-  double expectiminmax_ai(Game &game, int depth, int type_idx,
-                          const int &steps) {
+  double expectiminmax_ai(Game &game, int depth, int type, const int &steps) {
     double alpha = numeric_limits<double>::min();
-    auto issued_moves = take_moves(game, depth, type_idx, steps);
+    auto issued_moves = take_moves(game, depth, type, steps);
     Move next_move;
     for (auto &[pawn_id, steps, score] : issued_moves) {
       alpha = max(alpha, score);
@@ -105,19 +100,19 @@ struct LudoAI {
     return alpha;
   }
 
-  double expectiminmax(Game &game, int depth, int type_idx, const int &steps) {
+  double expectiminmax(Game &game, int depth, int type, const int &steps) {
     if (depth == 0 || game.ended()) {
       return evaluate(game);
     }
 
-    switch (NodeType(type_idx)) {
+    switch (NodeType(type)) {
     case NodeType::MAX:
-      return expectiminmax_ai(game, depth, type_idx, steps);
+      return expectiminmax_ai(game, depth, type, steps);
     case NodeType::MIN:
-      return expectiminmax_player(game, depth, type_idx, steps);
+      return expectiminmax_player(game, depth, type, steps);
     default:
       double alpha = 0;
-      int next_idx = (type_idx + 1) % 4;
+      int next_idx = (type + 1) % 4;
       for (int steps = 1; steps <= 6; ++steps) {
         alpha += PROBABILITY * expectiminmax(game, depth - 1, next_idx, steps);
       }
