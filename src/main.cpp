@@ -20,7 +20,7 @@ int main() {
   // game intro
   print_intro();
 
-  cout << center("Choose the number of players [1..4]\n");
+  cout << center("Choose the number of players [2..4]\n");
   int players_count = 2;
   cin >> players_count;
 

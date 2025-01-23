@@ -11,7 +11,7 @@ struct Move {
   int steps;
   double score;
 
-  Move() : pawn_id(0), steps(0), score(-1000) {}
+  Move() : pawn_id(-1), steps(0), score(-1000) {}
 
   Move(int id, int s, double sc) : pawn_id(id), steps(s), score(sc) {}
 

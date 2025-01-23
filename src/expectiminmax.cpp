@@ -2,6 +2,8 @@
 #include <game.h>
 #include <limits>
 #include <memory>
+#include <player_path.h>
+#include <utils.h>
 #include <vector>
 
 using namespace std;
@@ -10,7 +12,7 @@ using ai::Move;
 
 namespace algo {
 
-constexpr int MAX_DEPTH = 4;
+constexpr int MAX_DEPTH = 6;
 constexpr double WINNING_SCORE = 1000.0;
 constexpr double LOSING_SCORE = -1000.0;
 constexpr double BLOCKING_BONUS = 40;
@@ -19,6 +21,7 @@ constexpr double PROBABILITY = 1.0 / 6.0;
 struct Expectiminmax {
   Expectiminmax(int players_count) : players_count(players_count) {
     scores = vector<double>(players_count);
+    nodes_visited = 0;
   }
 
   enum class NodeType { MAX, CHANCE };
@@ -38,8 +41,15 @@ struct Expectiminmax {
         if (op_pawn.is_at_home() || op_pawn.has_reached_destination()) {
           continue;
         }
-        if (pawn.pos - op_pawn.pos <= 6) {
-          blocking_score += BLOCKING_BONUS;
+        auto op_cor =
+            game.board.get_pawn_coordinates(op_pawn.colour, op_pawn.pos);
+
+        auto path = player_path::get_path(pawn.colour);
+        auto it = find(path.begin(), path.end(), op_cor);
+        if (it != path.end()) {
+          if (pawn.pos > it - path.begin()) {
+            blocking_score += BLOCKING_BONUS;
+          }
         }
       }
     }
@@ -100,6 +110,7 @@ struct Expectiminmax {
   }
 
   double expectiminmax(Game &game, int depth, int type, const int &steps) {
+    nodes_visited += 1;
     if (depth == 0 || game.ended()) {
       return evaluate(game)[game.current_player_idx()];
     }
@@ -116,6 +127,7 @@ struct Expectiminmax {
   vector<double> scores;
 
   int players_count;
+  int nodes_visited;
 };
 
 int choose_pawn(Game &game, const int &steps, vector<Move> &path) {
@@ -123,7 +135,10 @@ int choose_pawn(Game &game, const int &steps, vector<Move> &path) {
   ai.expectiminmax(game, MAX_DEPTH, 0, steps);
   path = ai.path;
   // reverse(path.begin(), path.end());
-  cout << "hell" << path.front().pawn_id << '\n';
+  cout << center(dotted_line(format(
+              "The number of nodes visited during Expectiminmax traversal = {}",
+              ai.nodes_visited)))
+       << '\n';
   return path.front().pawn_id;
 }
 

@@ -85,8 +85,8 @@ void Game::move(int steps) {
   default:
     vector<ai::Move> path;
     cout << center("Thinking...") << '\n';
-    // id = ai::choose_pawn(*this, steps, path);
-    id = algo::choose_pawn(*this, steps, path);
+    id = ai::choose_pawn(*this, steps, path);
+    // id = algo::choose_pawn(*this, steps, path);
     cout << center(dotted_line(
                 format("Chosen pawn id: {}", drawer::pawn_symbol(id))))
          << '\n';

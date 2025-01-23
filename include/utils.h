@@ -28,16 +28,7 @@ inline void get_terminal_size(int &width, int &height) {
 inline void print_centered(const std::string &text) {
   int rows, cols;
   get_terminal_size(cols, rows);
-
-  // Calculate position
   int x = (cols - text.length()) / 2; // Center horizontally
-  // int y = rows / 2;                   // Center vertically
-
-  // Print spaces to move the text horizontally
-  // for (int i = 0; i < y; ++i)
-  //   std::cout << std::endl; // Move to vertical center
-
-  // Print spaces for horizontal centering
   std::cout << std::string(x, ' ') << text << std::endl;
 }
 
